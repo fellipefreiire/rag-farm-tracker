@@ -175,7 +175,7 @@ export function ReportComparison({ reports, onAddReports, onBack }: ReportCompar
         )}
 
         {/* Tabs */}
-        {reports.length >= 2 && (
+        {reports.length >= 1 && (
           <>
             <div className="mb-4 border-b-2 border-purple-200 bg-white rounded-t-2xl">
               <div className="flex gap-2 px-4">
@@ -230,19 +230,6 @@ export function ReportComparison({ reports, onAddReports, onBack }: ReportCompar
             </h3>
             <p className="text-gray-600">
               Faça upload de pelo menos 2 relatórios CSV para começar a comparação
-            </p>
-          </div>
-        )}
-
-        {/* Need more reports message */}
-        {reports.length === 1 && (
-          <div className="bg-yellow-50 border-2 border-yellow-300 rounded-2xl p-6 text-center">
-            <div className="text-4xl mb-2">⚠️</div>
-            <h3 className="text-xl font-bold text-yellow-900 mb-2">
-              Adicione mais 1 relatório
-            </h3>
-            <p className="text-yellow-700">
-              Você precisa de pelo menos 2 relatórios para fazer a comparação
             </p>
           </div>
         )}
