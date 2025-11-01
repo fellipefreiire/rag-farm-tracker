@@ -1,0 +1,4042 @@
+[
+  {
+    "id": 1001,
+    "name": "Scorpion",
+    "jName": "Scorpion",
+    "level": 16,
+    "element": "Fire",
+    "race": "Insect"
+  },
+  {
+    "id": 1002,
+    "name": "Poring",
+    "jName": "Poring",
+    "level": 1,
+    "element": "Water",
+    "race": "Plant"
+  },
+  {
+    "id": 1004,
+    "name": "Hornet",
+    "jName": "Hornet",
+    "level": 11,
+    "element": "Wind",
+    "race": "Insect"
+  },
+  {
+    "id": 1005,
+    "name": "Familiar",
+    "jName": "Familiar",
+    "level": 24,
+    "element": "Shadow",
+    "race": "Brute"
+  },
+  {
+    "id": 1007,
+    "name": "Fabre",
+    "jName": "Fabre",
+    "level": 6,
+    "element": "Earth",
+    "race": "Insect"
+  },
+  {
+    "id": 1008,
+    "name": "Pupa",
+    "jName": "Pupa",
+    "level": 4,
+    "element": "Earth",
+    "race": "Insect"
+  },
+  {
+    "id": 1009,
+    "name": "Condor",
+    "jName": "Condor",
+    "level": 12,
+    "element": "Wind",
+    "race": "Brute"
+  },
+  {
+    "id": 1010,
+    "name": "Willow",
+    "jName": "Willow",
+    "level": 8,
+    "element": "Earth",
+    "race": "Plant"
+  },
+  {
+    "id": 1011,
+    "name": "Chonchon",
+    "jName": "Chonchon",
+    "level": 5,
+    "element": "Wind",
+    "race": "Insect"
+  },
+  {
+    "id": 1012,
+    "name": "Roda Frog",
+    "jName": "Roda Frog",
+    "level": 13,
+    "element": "Water",
+    "race": "Fish"
+  },
+  {
+    "id": 1013,
+    "name": "Wolf",
+    "jName": "Wolf",
+    "level": 45,
+    "element": "Earth",
+    "race": "Brute"
+  },
+  {
+    "id": 1014,
+    "name": "Spore",
+    "jName": "Spore",
+    "level": 18,
+    "element": "Water",
+    "race": "Plant"
+  },
+  {
+    "id": 1015,
+    "name": "Zombie",
+    "jName": "Zombie",
+    "level": 17,
+    "element": "Corrupt",
+    "race": "Undead"
+  },
+  {
+    "id": 1016,
+    "name": "Archer Skeleton",
+    "jName": "Archer Skeleton",
+    "level": 50,
+    "element": "Corrupt",
+    "race": "Undead"
+  },
+  {
+    "id": 1018,
+    "name": "Creamy",
+    "jName": "Creamy",
+    "level": 23,
+    "element": "Wind",
+    "race": "Insect"
+  },
+  {
+    "id": 1019,
+    "name": "Peco Peco",
+    "jName": "Peco Peco",
+    "level": 25,
+    "element": "Fire",
+    "race": "Brute"
+  },
+  {
+    "id": 1020,
+    "name": "Mandragora",
+    "jName": "Mandragora",
+    "level": 13,
+    "element": "Earth",
+    "race": "Plant"
+  },
+  {
+    "id": 1023,
+    "name": "Orc Warrior",
+    "jName": "Orc Warrior",
+    "level": 44,
+    "element": "Earth",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1024,
+    "name": "Wormtail",
+    "jName": "Wormtail",
+    "level": 17,
+    "element": "Earth",
+    "race": "Plant"
+  },
+  {
+    "id": 1025,
+    "name": "Snake",
+    "jName": "Snake",
+    "level": 18,
+    "element": "Earth",
+    "race": "Brute"
+  },
+  {
+    "id": 1026,
+    "name": "Munak",
+    "jName": "Munak",
+    "level": 58,
+    "element": "Corrupt",
+    "race": "Undead"
+  },
+  {
+    "id": 1028,
+    "name": "Soldier Skeleton",
+    "jName": "Soldier Skeleton",
+    "level": 34,
+    "element": "Corrupt",
+    "race": "Undead"
+  },
+  {
+    "id": 1029,
+    "name": "Isis",
+    "jName": "Isis",
+    "level": 59,
+    "element": "Shadow",
+    "race": "Demon"
+  },
+  {
+    "id": 1030,
+    "name": "Anacondaq",
+    "jName": "Anacondaq",
+    "level": 100,
+    "element": "Poison",
+    "race": "Brute"
+  },
+  {
+    "id": 1031,
+    "name": "Poporing",
+    "jName": "Poporing",
+    "level": 30,
+    "element": "Poison",
+    "race": "Plant"
+  },
+  {
+    "id": 1032,
+    "name": "Verit",
+    "jName": "Verit",
+    "level": 52,
+    "element": "Corrupt",
+    "race": "Undead"
+  },
+  {
+    "id": 1033,
+    "name": "Madrone",
+    "jName": "Madrone",
+    "level": 34,
+    "element": "Fire",
+    "race": "Plant"
+  },
+  {
+    "id": 1034,
+    "name": "Thara Frog",
+    "jName": "Thara Frog",
+    "level": 40,
+    "element": "Water",
+    "race": "Fish"
+  },
+  {
+    "id": 1035,
+    "name": "Hunter Fly",
+    "jName": "Hunter Fly",
+    "level": 63,
+    "element": "Wind",
+    "race": "Insect"
+  },
+  {
+    "id": 1036,
+    "name": "Ghoul",
+    "jName": "Ghoul",
+    "level": 61,
+    "element": "Corrupt",
+    "race": "Undead"
+  },
+  {
+    "id": 1037,
+    "name": "Side Winder",
+    "jName": "Side Winder",
+    "level": 70,
+    "element": "Poison",
+    "race": "Brute"
+  },
+  {
+    "id": 1040,
+    "name": "Golem",
+    "jName": "Golem",
+    "level": 61,
+    "element": "Neutral",
+    "race": "Formless"
+  },
+  {
+    "id": 1041,
+    "name": "Mummy",
+    "jName": "Mummy",
+    "level": 55,
+    "element": "Corrupt",
+    "race": "Undead"
+  },
+  {
+    "id": 1042,
+    "name": "Steel Chonchon",
+    "jName": "Steel Chonchon",
+    "level": 48,
+    "element": "Wind",
+    "race": "Insect"
+  },
+  {
+    "id": 1044,
+    "name": "Obeaune",
+    "jName": "Obeaune",
+    "level": 53,
+    "element": "Water",
+    "race": "Fish"
+  },
+  {
+    "id": 1045,
+    "name": "Marc",
+    "jName": "Marc",
+    "level": 56,
+    "element": "Water",
+    "race": "Fish"
+  },
+  {
+    "id": 1047,
+    "name": "Peco Peco Egg",
+    "jName": "Peco Peco Egg",
+    "level": 7,
+    "element": "Neutral",
+    "race": "Formless"
+  },
+  {
+    "id": 1048,
+    "name": "Thief Bug Egg",
+    "jName": "Thief Bug Egg",
+    "level": 20,
+    "element": "Shadow",
+    "race": "Insect"
+  },
+  {
+    "id": 1049,
+    "name": "Picky",
+    "jName": "Picky",
+    "level": 9,
+    "element": "Fire",
+    "race": "Brute"
+  },
+  {
+    "id": 1050,
+    "name": "Shell Picky",
+    "jName": "Shell Picky",
+    "level": 10,
+    "element": "Fire",
+    "race": "Brute"
+  },
+  {
+    "id": 1051,
+    "name": "Thief Bug",
+    "jName": "Thief Bug",
+    "level": 21,
+    "element": "Neutral",
+    "race": "Insect"
+  },
+  {
+    "id": 1052,
+    "name": "Rocker",
+    "jName": "Rocker",
+    "level": 15,
+    "element": "Earth",
+    "race": "Insect"
+  },
+  {
+    "id": 1053,
+    "name": "Thief Bug Female",
+    "jName": "Thief Bug Female",
+    "level": 36,
+    "element": "Shadow",
+    "race": "Insect"
+  },
+  {
+    "id": 1054,
+    "name": "Thief Bug Male",
+    "jName": "Thief Bug Male",
+    "level": 30,
+    "element": "Shadow",
+    "race": "Insect"
+  },
+  {
+    "id": 1055,
+    "name": "Muka",
+    "jName": "Muka",
+    "level": 23,
+    "element": "Earth",
+    "race": "Plant"
+  },
+  {
+    "id": 1056,
+    "name": "Smokie",
+    "jName": "Smokie",
+    "level": 29,
+    "element": "Earth",
+    "race": "Brute"
+  },
+  {
+    "id": 1057,
+    "name": "Yoyo",
+    "jName": "Yoyo",
+    "level": 38,
+    "element": "Earth",
+    "race": "Brute"
+  },
+  {
+    "id": 1058,
+    "name": "Metaller",
+    "jName": "Metaller",
+    "level": 55,
+    "element": "Fire",
+    "race": "Insect"
+  },
+  {
+    "id": 1060,
+    "name": "Bigfoot",
+    "jName": "Bigfoot",
+    "level": 29,
+    "element": "Earth",
+    "race": "Brute"
+  },
+  {
+    "id": 1061,
+    "name": "Nightmare",
+    "jName": "Nightmare",
+    "level": 69,
+    "element": "Ghost",
+    "race": "Demon"
+  },
+  {
+    "id": 1063,
+    "name": "Lunatic",
+    "jName": "Lunatic",
+    "level": 3,
+    "element": "Neutral",
+    "race": "Brute"
+  },
+  {
+    "id": 1064,
+    "name": "Megalodon",
+    "jName": "Megalodon",
+    "level": 46,
+    "element": "Corrupt",
+    "race": "Undead"
+  },
+  {
+    "id": 1065,
+    "name": "Strouf",
+    "jName": "Strouf",
+    "level": 61,
+    "element": "Water",
+    "race": "Fish"
+  },
+  {
+    "id": 1066,
+    "name": "Vadon",
+    "jName": "Vadon",
+    "level": 45,
+    "element": "Water",
+    "race": "Fish"
+  },
+  {
+    "id": 1067,
+    "name": "Cornutus",
+    "jName": "Cornutus",
+    "level": 48,
+    "element": "Water",
+    "race": "Fish"
+  },
+  {
+    "id": 1068,
+    "name": "Hydra",
+    "jName": "Hydra",
+    "level": 34,
+    "element": "Water",
+    "race": "Plant"
+  },
+  {
+    "id": 1069,
+    "name": "Swordfish",
+    "jName": "Swordfish",
+    "level": 57,
+    "element": "Water",
+    "race": "Fish"
+  },
+  {
+    "id": 1070,
+    "name": "Kukre",
+    "jName": "Kukre",
+    "level": 42,
+    "element": "Water",
+    "race": "Fish"
+  },
+  {
+    "id": 1071,
+    "name": "Pirate Skeleton",
+    "jName": "Pirate Skeleton",
+    "level": 67,
+    "element": "Corrupt",
+    "race": "Undead"
+  },
+  {
+    "id": 1072,
+    "name": "Kaho",
+    "jName": "Kaho",
+    "level": 98,
+    "element": "Fire",
+    "race": "Demon"
+  },
+  {
+    "id": 1073,
+    "name": "Crab",
+    "jName": "Crab",
+    "level": 43,
+    "element": "Water",
+    "race": "Fish"
+  },
+  {
+    "id": 1074,
+    "name": "Shellfish",
+    "jName": "Shellfish",
+    "level": 50,
+    "element": "Water",
+    "race": "Fish"
+  },
+  {
+    "id": 1076,
+    "name": "Skeleton",
+    "jName": "Skeleton",
+    "level": 27,
+    "element": "Corrupt",
+    "race": "Undead"
+  },
+  {
+    "id": 1077,
+    "name": "Poison Spore",
+    "jName": "Poison Spore",
+    "level": 26,
+    "element": "Poison",
+    "race": "Plant"
+  },
+  {
+    "id": 1078,
+    "name": "Red Plant",
+    "jName": "Red Plant",
+    "level": 1,
+    "element": "Earth",
+    "race": "Plant"
+  },
+  {
+    "id": 1079,
+    "name": "Blue Plant",
+    "jName": "Blue Plant",
+    "level": 1,
+    "element": "Earth",
+    "race": "Plant"
+  },
+  {
+    "id": 1080,
+    "name": "Green Plant",
+    "jName": "Green Plant",
+    "level": 1,
+    "element": "Earth",
+    "race": "Plant"
+  },
+  {
+    "id": 1081,
+    "name": "Yellow Plant",
+    "jName": "Yellow Plant",
+    "level": 1,
+    "element": "Earth",
+    "race": "Plant"
+  },
+  {
+    "id": 1082,
+    "name": "White Plant",
+    "jName": "White Plant",
+    "level": 1,
+    "element": "Earth",
+    "race": "Plant"
+  },
+  {
+    "id": 1083,
+    "name": "Shining Plant",
+    "jName": "Shining Plant",
+    "level": 1,
+    "element": "Holy",
+    "race": "Plant"
+  },
+  {
+    "id": 1084,
+    "name": "Blue Mushroom",
+    "jName": "Blue Mushroom",
+    "level": 1,
+    "element": "Earth",
+    "race": "Plant"
+  },
+  {
+    "id": 1085,
+    "name": "Red Mushroom",
+    "jName": "Red Mushroom",
+    "level": 1,
+    "element": "Earth",
+    "race": "Plant"
+  },
+  {
+    "id": 1087,
+    "name": "Orc Hero",
+    "jName": "Orc Hero",
+    "level": 150,
+    "element": "Earth",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1088,
+    "name": "Vocal",
+    "jName": "Vocal",
+    "level": 130,
+    "element": "Earth",
+    "race": "Insect"
+  },
+  {
+    "id": 1089,
+    "name": "Toad",
+    "jName": "Toad",
+    "level": 130,
+    "element": "Water",
+    "race": "Fish"
+  },
+  {
+    "id": 1090,
+    "name": "Mastering",
+    "jName": "Mastering",
+    "level": 130,
+    "element": "Water",
+    "race": "Plant"
+  },
+  {
+    "id": 1091,
+    "name": "Dragon Fly",
+    "jName": "Dragon Fly",
+    "level": 130,
+    "element": "Wind",
+    "race": "Insect"
+  },
+  {
+    "id": 1092,
+    "name": "Vagabond Wolf",
+    "jName": "Vagabond Wolf",
+    "level": 130,
+    "element": "Earth",
+    "race": "Brute"
+  },
+  {
+    "id": 1093,
+    "name": "Eclipse",
+    "jName": "Eclipse",
+    "level": 130,
+    "element": "Neutral",
+    "race": "Brute"
+  },
+  {
+    "id": 1094,
+    "name": "Ambernite",
+    "jName": "Ambernite",
+    "level": 19,
+    "element": "Water",
+    "race": "Insect"
+  },
+  {
+    "id": 1095,
+    "name": "Andre Worker",
+    "jName": "Andre Worker",
+    "level": 65,
+    "element": "Earth",
+    "race": "Insect"
+  },
+  {
+    "id": 1096,
+    "name": "Angeling",
+    "jName": "Angeling",
+    "level": 130,
+    "element": "Holy",
+    "race": "Angel"
+  },
+  {
+    "id": 1097,
+    "name": "Ant Egg",
+    "jName": "Ant Egg",
+    "level": 16,
+    "element": "Neutral",
+    "race": "Formless"
+  },
+  {
+    "id": 1098,
+    "name": "Anubis",
+    "jName": "Anubis",
+    "level": 130,
+    "element": "Corrupt",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1099,
+    "name": "Argiope",
+    "jName": "Argiope",
+    "level": 75,
+    "element": "Poison",
+    "race": "Insect"
+  },
+  {
+    "id": 1100,
+    "name": "Argos",
+    "jName": "Argos",
+    "level": 47,
+    "element": "Poison",
+    "race": "Insect"
+  },
+  {
+    "id": 1101,
+    "name": "Baphometty",
+    "jName": "Baphometty",
+    "level": 80,
+    "element": "Shadow",
+    "race": "Demon"
+  },
+  {
+    "id": 1102,
+    "name": "Bathory",
+    "jName": "Bathory",
+    "level": 86,
+    "element": "Shadow",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1103,
+    "name": "Caramel",
+    "jName": "Caramel",
+    "level": 25,
+    "element": "Earth",
+    "race": "Brute"
+  },
+  {
+    "id": 1104,
+    "name": "Coco",
+    "jName": "Coco",
+    "level": 38,
+    "element": "Earth",
+    "race": "Brute"
+  },
+  {
+    "id": 1105,
+    "name": "Deniro Worker",
+    "jName": "Deniro Worker",
+    "level": 65,
+    "element": "Earth",
+    "race": "Insect"
+  },
+  {
+    "id": 1106,
+    "name": "Desert Wolf",
+    "jName": "Desert Wolf",
+    "level": 100,
+    "element": "Fire",
+    "race": "Brute"
+  },
+  {
+    "id": 1107,
+    "name": "Baby Desert Wolf",
+    "jName": "Desert Wolf Baby",
+    "level": 14,
+    "element": "Fire",
+    "race": "Brute"
+  },
+  {
+    "id": 1108,
+    "name": "Deviace",
+    "jName": "Deviace",
+    "level": 110,
+    "element": "Water",
+    "race": "Fish"
+  },
+  {
+    "id": 1109,
+    "name": "Deviruchi",
+    "jName": "Deviruchi",
+    "level": 93,
+    "element": "Shadow",
+    "race": "Demon"
+  },
+  {
+    "id": 1110,
+    "name": "Dokebi",
+    "jName": "Dokebi",
+    "level": 68,
+    "element": "Shadow",
+    "race": "Demon"
+  },
+  {
+    "id": 1111,
+    "name": "Drainliar",
+    "jName": "Drainliar",
+    "level": 47,
+    "element": "Shadow",
+    "race": "Brute"
+  },
+  {
+    "id": 1112,
+    "name": "Drake",
+    "jName": "Drake",
+    "level": 150,
+    "element": "Corrupt",
+    "race": "Undead"
+  },
+  {
+    "id": 1113,
+    "name": "Drops",
+    "jName": "Drops",
+    "level": 2,
+    "element": "Fire",
+    "race": "Plant"
+  },
+  {
+    "id": 1114,
+    "name": "Dustiness",
+    "jName": "Dustiness",
+    "level": 62,
+    "element": "Wind",
+    "race": "Insect"
+  },
+  {
+    "id": 1115,
+    "name": "Eddga",
+    "jName": "Eddga",
+    "level": 150,
+    "element": "Fire",
+    "race": "Brute"
+  },
+  {
+    "id": 1116,
+    "name": "Eggyra",
+    "jName": "Eggyra",
+    "level": 53,
+    "element": "Ghost",
+    "race": "Formless"
+  },
+  {
+    "id": 1117,
+    "name": "Evil Druid",
+    "jName": "Evil Druid",
+    "level": 80,
+    "element": "Corrupt",
+    "race": "Undead"
+  },
+  {
+    "id": 1118,
+    "name": "Flora",
+    "jName": "Flora",
+    "level": 59,
+    "element": "Earth",
+    "race": "Plant"
+  },
+  {
+    "id": 1119,
+    "name": "Frilldora",
+    "jName": "Frilldora",
+    "level": 57,
+    "element": "Fire",
+    "race": "Brute"
+  },
+  {
+    "id": 1120,
+    "name": "Ghostring",
+    "jName": "Ghostring",
+    "level": 130,
+    "element": "Ghost",
+    "race": "Demon"
+  },
+  {
+    "id": 1121,
+    "name": "Giearth",
+    "jName": "Giearth",
+    "level": 42,
+    "element": "Earth",
+    "race": "Demon"
+  },
+  {
+    "id": 1122,
+    "name": "Goblin Dagger",
+    "jName": "Goblin Dagger",
+    "level": 48,
+    "element": "Wind",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1123,
+    "name": "Goblin Flail",
+    "jName": "Goblin Flail",
+    "level": 44,
+    "element": "Fire",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1124,
+    "name": "Goblin Axe",
+    "jName": "Goblin Axe",
+    "level": 44,
+    "element": "Poison",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1125,
+    "name": "Goblin Hammer",
+    "jName": "Goblin Hammer",
+    "level": 49,
+    "element": "Earth",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1126,
+    "name": "Goblin Mace",
+    "jName": "Goblin Mace",
+    "level": 50,
+    "element": "Water",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1127,
+    "name": "Hode",
+    "jName": "Hode",
+    "level": 63,
+    "element": "Earth",
+    "race": "Brute"
+  },
+  {
+    "id": 1128,
+    "name": "Horn",
+    "jName": "Horn",
+    "level": 32,
+    "element": "Earth",
+    "race": "Insect"
+  },
+  {
+    "id": 1129,
+    "name": "Horong",
+    "jName": "Horong",
+    "level": 66,
+    "element": "Fire",
+    "race": "Formless"
+  },
+  {
+    "id": 1130,
+    "name": "Jakk",
+    "jName": "Jakk",
+    "level": 63,
+    "element": "Fire",
+    "race": "Formless"
+  },
+  {
+    "id": 1131,
+    "name": "Joker",
+    "jName": "Joker",
+    "level": 90,
+    "element": "Wind",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1132,
+    "name": "Khalitzburg",
+    "jName": "Khalitzburg",
+    "level": 118,
+    "element": "Corrupt",
+    "race": "Undead"
+  },
+  {
+    "id": 1133,
+    "name": "Kobold",
+    "jName": "Kobold",
+    "level": 97,
+    "element": "Wind",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1134,
+    "name": "Kobold",
+    "jName": "Kobold",
+    "level": 99,
+    "element": "Poison",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1135,
+    "name": "Kobold",
+    "jName": "Kobold",
+    "level": 98,
+    "element": "Fire",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1138,
+    "name": "Magnolia",
+    "jName": "Magnolia",
+    "level": 53,
+    "element": "Water",
+    "race": "Demon"
+  },
+  {
+    "id": 1139,
+    "name": "Mantis",
+    "jName": "Mantis",
+    "level": 65,
+    "element": "Earth",
+    "race": "Insect"
+  },
+  {
+    "id": 1140,
+    "name": "Marduk",
+    "jName": "Marduk",
+    "level": 73,
+    "element": "Fire",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1141,
+    "name": "Marina",
+    "jName": "Marina",
+    "level": 42,
+    "element": "Water",
+    "race": "Plant"
+  },
+  {
+    "id": 1142,
+    "name": "Marine Sphere",
+    "jName": "Marine Sphere",
+    "level": 51,
+    "element": "Water",
+    "race": "Plant"
+  },
+  {
+    "id": 1143,
+    "name": "Marionette",
+    "jName": "Marionette",
+    "level": 90,
+    "element": "Ghost",
+    "race": "Demon"
+  },
+  {
+    "id": 1144,
+    "name": "Marse",
+    "jName": "Marse",
+    "level": 47,
+    "element": "Water",
+    "race": "Fish"
+  },
+  {
+    "id": 1145,
+    "name": "Martin",
+    "jName": "Martin",
+    "level": 39,
+    "element": "Earth",
+    "race": "Brute"
+  },
+  {
+    "id": 1146,
+    "name": "Matyr",
+    "jName": "Matyr",
+    "level": 58,
+    "element": "Shadow",
+    "race": "Brute"
+  },
+  {
+    "id": 1148,
+    "name": "Medusa",
+    "jName": "Medusa",
+    "level": 100,
+    "element": "Neutral",
+    "race": "Demon"
+  },
+  {
+    "id": 1149,
+    "name": "Minorous",
+    "jName": "Minorous",
+    "level": 58,
+    "element": "Fire",
+    "race": "Brute"
+  },
+  {
+    "id": 1151,
+    "name": "Myst",
+    "jName": "Myst",
+    "level": 49,
+    "element": "Poison",
+    "race": "Formless"
+  },
+  {
+    "id": 1152,
+    "name": "Orc Skeleton",
+    "jName": "Orc Skeleton",
+    "level": 53,
+    "element": "Corrupt",
+    "race": "Undead"
+  },
+  {
+    "id": 1153,
+    "name": "Orc Zombie",
+    "jName": "Orc Zombie",
+    "level": 51,
+    "element": "Corrupt",
+    "race": "Undead"
+  },
+  {
+    "id": 1154,
+    "name": "Pasana",
+    "jName": "Pasana",
+    "level": 79,
+    "element": "Fire",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1155,
+    "name": "Ground Petite",
+    "jName": "Ground Petite",
+    "level": 86,
+    "element": "Earth",
+    "race": "Dragon"
+  },
+  {
+    "id": 1156,
+    "name": "Sky Petite",
+    "jName": "Sky Petite",
+    "level": 79,
+    "element": "Wind",
+    "race": "Dragon"
+  },
+  {
+    "id": 1158,
+    "name": "Phen",
+    "jName": "Phen",
+    "level": 52,
+    "element": "Water",
+    "race": "Fish"
+  },
+  {
+    "id": 1160,
+    "name": "Piere Worker",
+    "jName": "Piere Worker",
+    "level": 65,
+    "element": "Earth",
+    "race": "Insect"
+  },
+  {
+    "id": 1161,
+    "name": "Plankton",
+    "jName": "Plankton",
+    "level": 40,
+    "element": "Water",
+    "race": "Plant"
+  },
+  {
+    "id": 1162,
+    "name": "Rafflesia",
+    "jName": "Rafflesia",
+    "level": 86,
+    "element": "Earth",
+    "race": "Plant"
+  },
+  {
+    "id": 1163,
+    "name": "Raydric",
+    "jName": "Raydric",
+    "level": 115,
+    "element": "Shadow",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1164,
+    "name": "Requiem",
+    "jName": "Requiem",
+    "level": 71,
+    "element": "Shadow",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1165,
+    "name": "Sandman",
+    "jName": "Sandman",
+    "level": 61,
+    "element": "Earth",
+    "race": "Formless"
+  },
+  {
+    "id": 1166,
+    "name": "Savage",
+    "jName": "Savage",
+    "level": 59,
+    "element": "Earth",
+    "race": "Brute"
+  },
+  {
+    "id": 1167,
+    "name": "Savage Babe",
+    "jName": "Savage Babe",
+    "level": 14,
+    "element": "Earth",
+    "race": "Brute"
+  },
+  {
+    "id": 1169,
+    "name": "Skeleton Worker",
+    "jName": "Skeleton Worker",
+    "level": 44,
+    "element": "Corrupt",
+    "race": "Undead"
+  },
+  {
+    "id": 1170,
+    "name": "Sohee",
+    "jName": "Sohee",
+    "level": 64,
+    "element": "Water",
+    "race": "Demon"
+  },
+  {
+    "id": 1174,
+    "name": "Stainer",
+    "jName": "Stainer",
+    "level": 21,
+    "element": "Wind",
+    "race": "Insect"
+  },
+  {
+    "id": 1175,
+    "name": "Tarou",
+    "jName": "Tarou",
+    "level": 22,
+    "element": "Poison",
+    "race": "Brute"
+  },
+  {
+    "id": 1176,
+    "name": "Vitata Worker",
+    "jName": "Vitata Worker",
+    "level": 65,
+    "element": "Earth",
+    "race": "Insect"
+  },
+  {
+    "id": 1177,
+    "name": "Zenorc",
+    "jName": "Zenorc",
+    "level": 54,
+    "element": "Shadow",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1178,
+    "name": "Zerom",
+    "jName": "Zerom",
+    "level": 70,
+    "element": "Fire",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1179,
+    "name": "Whisper",
+    "jName": "Whisper",
+    "level": 46,
+    "element": "Ghost",
+    "race": "Demon"
+  },
+  {
+    "id": 1180,
+    "name": "Nine Tail",
+    "jName": "Nine Tail",
+    "level": 72,
+    "element": "Fire",
+    "race": "Brute"
+  },
+  {
+    "id": 1186,
+    "name": "Giant Whisper",
+    "jName": "Giant Whisper",
+    "level": 110,
+    "element": "Ghost",
+    "race": "Demon"
+  },
+  {
+    "id": 1188,
+    "name": "Bongun",
+    "jName": "Bongun",
+    "level": 59,
+    "element": "Corrupt",
+    "race": "Undead"
+  },
+  {
+    "id": 1189,
+    "name": "Orc Archer",
+    "jName": "Orc Archer",
+    "level": 53,
+    "element": "Earth",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1191,
+    "name": "Mimic",
+    "jName": "Mimic",
+    "level": 56,
+    "element": "Neutral",
+    "race": "Formless"
+  },
+  {
+    "id": 1192,
+    "name": "Wraith",
+    "jName": "Wraith",
+    "level": 77,
+    "element": "Corrupt",
+    "race": "Undead"
+  },
+  {
+    "id": 1193,
+    "name": "Alarm",
+    "jName": "Alarm",
+    "level": 88,
+    "element": "Neutral",
+    "race": "Formless"
+  },
+  {
+    "id": 1194,
+    "name": "Arclouze",
+    "jName": "Arclouse",
+    "level": 107,
+    "element": "Earth",
+    "race": "Insect"
+  },
+  {
+    "id": 1196,
+    "name": "Skeleton Prisoner",
+    "jName": "Skeleton Prisoner",
+    "level": 91,
+    "element": "Corrupt",
+    "race": "Undead"
+  },
+  {
+    "id": 1197,
+    "name": "Zombie Prisoner",
+    "jName": "Zombie Prisoner",
+    "level": 89,
+    "element": "Corrupt",
+    "race": "Undead"
+  },
+  {
+    "id": 1198,
+    "name": "Dark Priest",
+    "jName": "Dark Priest",
+    "level": 98,
+    "element": "Corrupt",
+    "race": "Demon"
+  },
+  {
+    "id": 1199,
+    "name": "Punk",
+    "jName": "Punk",
+    "level": 82,
+    "element": "Wind",
+    "race": "Plant"
+  },
+  {
+    "id": 1200,
+    "name": "Zealotus",
+    "jName": "Zherlthsh",
+    "level": 130,
+    "element": "Neutral",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1201,
+    "name": "Rybio",
+    "jName": "Rybio",
+    "level": 98,
+    "element": "Neutral",
+    "race": "Demon"
+  },
+  {
+    "id": 1202,
+    "name": "Phendark",
+    "jName": "Phendark",
+    "level": 102,
+    "element": "Neutral",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1206,
+    "name": "Anolian",
+    "jName": "Anolian",
+    "level": 95,
+    "element": "Water",
+    "race": "Fish"
+  },
+  {
+    "id": 1207,
+    "name": "Sting",
+    "jName": "Sting",
+    "level": 104,
+    "element": "Earth",
+    "race": "Formless"
+  },
+  {
+    "id": 1208,
+    "name": "Wanderer",
+    "jName": "Wander Man",
+    "level": 120,
+    "element": "Wind",
+    "race": "Demon"
+  },
+  {
+    "id": 1209,
+    "name": "Cramp",
+    "jName": "Cramp",
+    "level": 82,
+    "element": "Poison",
+    "race": "Brute"
+  },
+  {
+    "id": 1211,
+    "name": "Brilight",
+    "jName": "Brilight",
+    "level": 71,
+    "element": "Fire",
+    "race": "Insect"
+  },
+  {
+    "id": 1212,
+    "name": "Iron Fist",
+    "jName": "Iron Fist",
+    "level": 120,
+    "element": "Neutral",
+    "race": "Insect"
+  },
+  {
+    "id": 1213,
+    "name": "High Orc",
+    "jName": "High Orc",
+    "level": 91,
+    "element": "Fire",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1214,
+    "name": "Choco",
+    "jName": "Choco",
+    "level": 90,
+    "element": "Fire",
+    "race": "Brute"
+  },
+  {
+    "id": 1215,
+    "name": "Stem Worm",
+    "jName": "Stem Worm",
+    "level": 84,
+    "element": "Wind",
+    "race": "Plant"
+  },
+  {
+    "id": 1216,
+    "name": "Penomena",
+    "jName": "Penomena",
+    "level": 85,
+    "element": "Poison",
+    "race": "Fish"
+  },
+  {
+    "id": 1219,
+    "name": "Abysmal Knight",
+    "jName": "Knight of Abyss",
+    "level": 110,
+    "element": "Shadow",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1242,
+    "name": "Marin",
+    "jName": "Marin",
+    "level": 37,
+    "element": "Water",
+    "race": "Plant"
+  },
+  {
+    "id": 1243,
+    "name": "Sasquatch",
+    "jName": "Sasquatch",
+    "level": 72,
+    "element": "Neutral",
+    "race": "Brute"
+  },
+  {
+    "id": 1246,
+    "name": "Christmas Cookie",
+    "jName": "Christmas Cookie",
+    "level": 37,
+    "element": "Holy",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1248,
+    "name": "Cruiser",
+    "jName": "Cruiser",
+    "level": 57,
+    "element": "Neutral",
+    "race": "Formless"
+  },
+  {
+    "id": 1249,
+    "name": "Myst Case",
+    "jName": "Myst Case",
+    "level": 54,
+    "element": "Neutral",
+    "race": "Formless"
+  },
+  {
+    "id": 1250,
+    "name": "Chepet",
+    "jName": "Chepet",
+    "level": 130,
+    "element": "Fire",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1252,
+    "name": "Garm",
+    "jName": "Garm",
+    "level": 150,
+    "element": "Water",
+    "race": "Brute"
+  },
+  {
+    "id": 1253,
+    "name": "Gargoyle",
+    "jName": "Gargoyle",
+    "level": 100,
+    "element": "Wind",
+    "race": "Demon"
+  },
+  {
+    "id": 1254,
+    "name": "Raggler",
+    "jName": "Raggler",
+    "level": 50,
+    "element": "Wind",
+    "race": "Brute"
+  },
+  {
+    "id": 1255,
+    "name": "Nereid",
+    "jName": "Neraid",
+    "level": 98,
+    "element": "Earth",
+    "race": "Brute"
+  },
+  {
+    "id": 1256,
+    "name": "Pest",
+    "jName": "Pest",
+    "level": 89,
+    "element": "Shadow",
+    "race": "Brute"
+  },
+  {
+    "id": 1257,
+    "name": "Injustice",
+    "jName": "Injustice",
+    "level": 95,
+    "element": "Shadow",
+    "race": "Undead"
+  },
+  {
+    "id": 1258,
+    "name": "Goblin Archer",
+    "jName": "Goblin Archer",
+    "level": 55,
+    "element": "Poison",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1259,
+    "name": "Gryphon",
+    "jName": "Gryphon",
+    "level": 130,
+    "element": "Wind",
+    "race": "Brute"
+  },
+  {
+    "id": 1260,
+    "name": "Dark Frame",
+    "jName": "Dark Frame",
+    "level": 76,
+    "element": "Shadow",
+    "race": "Demon"
+  },
+  {
+    "id": 1261,
+    "name": "Wild Rose",
+    "jName": "Wild Rose",
+    "level": 70,
+    "element": "Wind",
+    "race": "Brute"
+  },
+  {
+    "id": 1262,
+    "name": "Mutant Dragonoid",
+    "jName": "Mutant Dragon",
+    "level": 90,
+    "element": "Fire",
+    "race": "Dragon"
+  },
+  {
+    "id": 1263,
+    "name": "Wind Ghost",
+    "jName": "Wind Ghost",
+    "level": 80,
+    "element": "Wind",
+    "race": "Demon"
+  },
+  {
+    "id": 1264,
+    "name": "Merman",
+    "jName": "Merman",
+    "level": 60,
+    "element": "Water",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1265,
+    "name": "Cookie",
+    "jName": "Cookie",
+    "level": 35,
+    "element": "Neutral",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1266,
+    "name": "Aster",
+    "jName": "Aster",
+    "level": 50,
+    "element": "Earth",
+    "race": "Fish"
+  },
+  {
+    "id": 1267,
+    "name": "Carat",
+    "jName": "Carat",
+    "level": 103,
+    "element": "Wind",
+    "race": "Demon"
+  },
+  {
+    "id": 1269,
+    "name": "Clock",
+    "jName": "Clock",
+    "level": 81,
+    "element": "Earth",
+    "race": "Formless"
+  },
+  {
+    "id": 1270,
+    "name": "Clock Tower Manager",
+    "jName": "Clock Tower Manager",
+    "level": 110,
+    "element": "Neutral",
+    "race": "Formless"
+  },
+  {
+    "id": 1271,
+    "name": "Alligator",
+    "jName": "Alligator",
+    "level": 57,
+    "element": "Water",
+    "race": "Brute"
+  },
+  {
+    "id": 1273,
+    "name": "Orc Lady",
+    "jName": "Orc Lady",
+    "level": 45,
+    "element": "Earth",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1274,
+    "name": "Megalith",
+    "jName": "Megalith",
+    "level": 65,
+    "element": "Neutral",
+    "race": "Formless"
+  },
+  {
+    "id": 1275,
+    "name": "Alice",
+    "jName": "Alice",
+    "level": 110,
+    "element": "Neutral",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1276,
+    "name": "Raydric Archer",
+    "jName": "Raydric Archer",
+    "level": 115,
+    "element": "Shadow",
+    "race": "Demon"
+  },
+  {
+    "id": 1277,
+    "name": "Greatest General",
+    "jName": "Greatest General",
+    "level": 55,
+    "element": "Fire",
+    "race": "Formless"
+  },
+  {
+    "id": 1278,
+    "name": "Stalactic Golem",
+    "jName": "Stalactic Golem",
+    "level": 68,
+    "element": "Neutral",
+    "race": "Formless"
+  },
+  {
+    "id": 1279,
+    "name": "Tri Joint",
+    "jName": "Tri Joint",
+    "level": 66,
+    "element": "Earth",
+    "race": "Insect"
+  },
+  {
+    "id": 1280,
+    "name": "Goblin Steamrider",
+    "jName": "Steam Goblin",
+    "level": 66,
+    "element": "Wind",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1281,
+    "name": "Sage Worm",
+    "jName": "Sage Worm",
+    "level": 70,
+    "element": "Neutral",
+    "race": "Brute"
+  },
+  {
+    "id": 1282,
+    "name": "Kobold Archer",
+    "jName": "Kobold Archer",
+    "level": 98,
+    "element": "Fire",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1283,
+    "name": "Chimera",
+    "jName": "Chimera",
+    "level": 130,
+    "element": "Fire",
+    "race": "Brute"
+  },
+  {
+    "id": 1289,
+    "name": "Mayus",
+    "jName": "Mayus",
+    "level": 130,
+    "element": "Earth",
+    "race": "Insect"
+  },
+  {
+    "id": 1290,
+    "name": "Skeleton General",
+    "jName": "Skeleton General",
+    "level": 110,
+    "element": "Corrupt",
+    "race": "Undead"
+  },
+  {
+    "id": 1291,
+    "name": "Wraith Dead",
+    "jName": "Wraith Dead",
+    "level": 115,
+    "element": "Corrupt",
+    "race": "Undead"
+  },
+  {
+    "id": 1293,
+    "name": "Creamy Fear",
+    "jName": "Creamy Fear",
+    "level": 90,
+    "element": "Wind",
+    "race": "Insect"
+  },
+  {
+    "id": 1294,
+    "name": "Killer Mantis",
+    "jName": "Killer Mantis",
+    "level": 90,
+    "element": "Earth",
+    "race": "Insect"
+  },
+  {
+    "id": 1295,
+    "name": "Owl Baron",
+    "jName": "Owl Baron",
+    "level": 120,
+    "element": "Neutral",
+    "race": "Demon"
+  },
+  {
+    "id": 1296,
+    "name": "Kobold Leader",
+    "jName": "Kobold Leader",
+    "level": 130,
+    "element": "Wind",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1297,
+    "name": "Ancient Mummy",
+    "jName": "Ancient Mummy",
+    "level": 109,
+    "element": "Corrupt",
+    "race": "Undead"
+  },
+  {
+    "id": 1298,
+    "name": "Zombie Master",
+    "jName": "Zombie Master",
+    "level": 110,
+    "element": "Corrupt",
+    "race": "Undead"
+  },
+  {
+    "id": 1299,
+    "name": "Goblin Leader",
+    "jName": "Goblin Leader",
+    "level": 130,
+    "element": "Wind",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1300,
+    "name": "Caterpillar",
+    "jName": "Caterpillar",
+    "level": 120,
+    "element": "Earth",
+    "race": "Insect"
+  },
+  {
+    "id": 1301,
+    "name": "Am Mut",
+    "jName": "Am Mut",
+    "level": 110,
+    "element": "Shadow",
+    "race": "Demon"
+  },
+  {
+    "id": 1302,
+    "name": "Dark Illusion",
+    "jName": "Dark Illusion",
+    "level": 110,
+    "element": "Corrupt",
+    "race": "Demon"
+  },
+  {
+    "id": 1303,
+    "name": "Giant Hornet",
+    "jName": "Giant Hornet",
+    "level": 90,
+    "element": "Wind",
+    "race": "Insect"
+  },
+  {
+    "id": 1304,
+    "name": "Giant Spider",
+    "jName": "Giant Spider",
+    "level": 110,
+    "element": "Poison",
+    "race": "Insect"
+  },
+  {
+    "id": 1305,
+    "name": "Ancient Worm",
+    "jName": "Ancient Worm",
+    "level": 120,
+    "element": "Poison",
+    "race": "Insect"
+  },
+  {
+    "id": 1306,
+    "name": "Leib Olmai",
+    "jName": "Leib Olmai",
+    "level": 100,
+    "element": "Earth",
+    "race": "Brute"
+  },
+  {
+    "id": 1307,
+    "name": "Cat o' Nine Tails",
+    "jName": "Cat o' Nine Tails",
+    "level": 110,
+    "element": "Fire",
+    "race": "Demon"
+  },
+  {
+    "id": 1308,
+    "name": "Panzer Goblin",
+    "jName": "Panzer Goblin",
+    "level": 52,
+    "element": "Wind",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1309,
+    "name": "Gajomart",
+    "jName": "Gajomart",
+    "level": 90,
+    "element": "Fire",
+    "race": "Formless"
+  },
+  {
+    "id": 1310,
+    "name": "Majoruros",
+    "jName": "Majoruros",
+    "level": 113,
+    "element": "Fire",
+    "race": "Brute"
+  },
+  {
+    "id": 1311,
+    "name": "Gullinbursti",
+    "jName": "Gullinbursti",
+    "level": 120,
+    "element": "Earth",
+    "race": "Brute"
+  },
+  {
+    "id": 1313,
+    "name": "Mobster",
+    "jName": "Mobster",
+    "level": 90,
+    "element": "Neutral",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1314,
+    "name": "Permeter",
+    "jName": "Permeter",
+    "level": 90,
+    "element": "Neutral",
+    "race": "Brute"
+  },
+  {
+    "id": 1315,
+    "name": "Assaulter",
+    "jName": "Assaulter",
+    "level": 100,
+    "element": "Wind",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1316,
+    "name": "Solider",
+    "jName": "Solider",
+    "level": 92,
+    "element": "Earth",
+    "race": "Brute"
+  },
+  {
+    "id": 1317,
+    "name": "Seal",
+    "jName": "Fur Seal",
+    "level": 47,
+    "element": "Water",
+    "race": "Brute"
+  },
+  {
+    "id": 1318,
+    "name": "Heater",
+    "jName": "Heater",
+    "level": 98,
+    "element": "Fire",
+    "race": "Brute"
+  },
+  {
+    "id": 1319,
+    "name": "Freezer",
+    "jName": "Freezer",
+    "level": 94,
+    "element": "Water",
+    "race": "Brute"
+  },
+  {
+    "id": 1320,
+    "name": "Owl Duke",
+    "jName": "Owl Duke",
+    "level": 92,
+    "element": "Neutral",
+    "race": "Demon"
+  },
+  {
+    "id": 1321,
+    "name": "Dragon Tail",
+    "jName": "Dragon Tail",
+    "level": 86,
+    "element": "Wind",
+    "race": "Insect"
+  },
+  {
+    "id": 1322,
+    "name": "Spring Rabbit",
+    "jName": "Spring Rabbit",
+    "level": 88,
+    "element": "Earth",
+    "race": "Brute"
+  },
+  {
+    "id": 1323,
+    "name": "Sea Otter",
+    "jName": "Sea Otter",
+    "level": 48,
+    "element": "Water",
+    "race": "Brute"
+  },
+  {
+    "id": 1365,
+    "name": "Apocalypse",
+    "jName": "Apocalypse",
+    "level": 112,
+    "element": "Neutral",
+    "race": "Formless"
+  },
+  {
+    "id": 1366,
+    "name": "Lava Golem",
+    "jName": "Lava Golem",
+    "level": 117,
+    "element": "Fire",
+    "race": "Formless"
+  },
+  {
+    "id": 1367,
+    "name": "Blazer",
+    "jName": "Blazer",
+    "level": 112,
+    "element": "Fire",
+    "race": "Demon"
+  },
+  {
+    "id": 1368,
+    "name": "Geographer",
+    "jName": "Geographer",
+    "level": 73,
+    "element": "Earth",
+    "race": "Plant"
+  },
+  {
+    "id": 1369,
+    "name": "Grand Peco",
+    "jName": "Grand Peco",
+    "level": 75,
+    "element": "Fire",
+    "race": "Brute"
+  },
+  {
+    "id": 1372,
+    "name": "Goat",
+    "jName": "Goat",
+    "level": 80,
+    "element": "Fire",
+    "race": "Brute"
+  },
+  {
+    "id": 1375,
+    "name": "The Paper",
+    "jName": "The Paper",
+    "level": 97,
+    "element": "Neutral",
+    "race": "Formless"
+  },
+  {
+    "id": 1376,
+    "name": "Harpy",
+    "jName": "Harpy",
+    "level": 83,
+    "element": "Wind",
+    "race": "Demon"
+  },
+  {
+    "id": 1377,
+    "name": "Elder",
+    "jName": "Elder",
+    "level": 110,
+    "element": "Neutral",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1378,
+    "name": "Demon Pungus",
+    "jName": "Demon Pungus",
+    "level": 91,
+    "element": "Poison",
+    "race": "Demon"
+  },
+  {
+    "id": 1379,
+    "name": "Nightmare Terror",
+    "jName": "Nightmare Terror",
+    "level": 113,
+    "element": "Shadow",
+    "race": "Demon"
+  },
+  {
+    "id": 1380,
+    "name": "Driller",
+    "jName": "Driller",
+    "level": 65,
+    "element": "Earth",
+    "race": "Brute"
+  },
+  {
+    "id": 1381,
+    "name": "Grizzly",
+    "jName": "Grizzly",
+    "level": 100,
+    "element": "Fire",
+    "race": "Brute"
+  },
+  {
+    "id": 1382,
+    "name": "Diabolic",
+    "jName": "Diabolic",
+    "level": 114,
+    "element": "Shadow",
+    "race": "Demon"
+  },
+  {
+    "id": 1383,
+    "name": "Explosion",
+    "jName": "Explosion",
+    "level": 100,
+    "element": "Fire",
+    "race": "Brute"
+  },
+  {
+    "id": 1384,
+    "name": "Deleter",
+    "jName": "Deleter",
+    "level": 97,
+    "element": "Fire",
+    "race": "Dragon"
+  },
+  {
+    "id": 1385,
+    "name": "Deleter",
+    "jName": "Deleter",
+    "level": 95,
+    "element": "Fire",
+    "race": "Dragon"
+  },
+  {
+    "id": 1386,
+    "name": "Sleeper",
+    "jName": "Sleeper",
+    "level": 81,
+    "element": "Earth",
+    "race": "Formless"
+  },
+  {
+    "id": 1387,
+    "name": "Gig",
+    "jName": "Gig",
+    "level": 85,
+    "element": "Fire",
+    "race": "Brute"
+  },
+  {
+    "id": 1388,
+    "name": "Arc Angeling",
+    "jName": "Arc Angeling",
+    "level": 130,
+    "element": "Holy",
+    "race": "Angel"
+  },
+  {
+    "id": 1391,
+    "name": "Galapago",
+    "jName": "Galapago",
+    "level": 45,
+    "element": "Earth",
+    "race": "Brute"
+  },
+  {
+    "id": 1392,
+    "name": "Rotar Zairo",
+    "jName": "Rotar Zairo",
+    "level": 48,
+    "element": "Wind",
+    "race": "Formless"
+  },
+  {
+    "id": 1400,
+    "name": "Karakasa",
+    "jName": "Karakasa",
+    "level": 72,
+    "element": "Neutral",
+    "race": "Formless"
+  },
+  {
+    "id": 1401,
+    "name": "Shinobi",
+    "jName": "Shinobi",
+    "level": 95,
+    "element": "Shadow",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1402,
+    "name": "Poisonous Toad",
+    "jName": "Poison Toad",
+    "level": 87,
+    "element": "Poison",
+    "race": "Brute"
+  },
+  {
+    "id": 1403,
+    "name": "Firelock Soldier",
+    "jName": "Antique Firelock",
+    "level": 88,
+    "element": "Corrupt",
+    "race": "Undead"
+  },
+  {
+    "id": 1404,
+    "name": "Miyabi Doll",
+    "jName": "Miyabi Ningyo",
+    "level": 85,
+    "element": "Shadow",
+    "race": "Demon"
+  },
+  {
+    "id": 1405,
+    "name": "Tengu",
+    "jName": "Tengu",
+    "level": 98,
+    "element": "Earth",
+    "race": "Demon"
+  },
+  {
+    "id": 1406,
+    "name": "Kapha",
+    "jName": "Kapha",
+    "level": 83,
+    "element": "Water",
+    "race": "Fish"
+  },
+  {
+    "id": 1408,
+    "name": "Bloody Butterfly",
+    "jName": "Bloody Butterfly",
+    "level": 94,
+    "element": "Wind",
+    "race": "Insect"
+  },
+  {
+    "id": 1409,
+    "name": "Dumpling Child",
+    "jName": "Rice Cake Boy",
+    "level": 60,
+    "element": "Neutral",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1410,
+    "name": "Enchanted Peach Tree",
+    "jName": "Live Peach Tree",
+    "level": 92,
+    "element": "Earth",
+    "race": "Plant"
+  },
+  {
+    "id": 1412,
+    "name": "Taoist Hermit",
+    "jName": "Evil Cloud Hermit",
+    "level": 96,
+    "element": "Neutral",
+    "race": "Formless"
+  },
+  {
+    "id": 1413,
+    "name": "Hermit Plant",
+    "jName": "Wild Ginseng",
+    "level": 90,
+    "element": "Fire",
+    "race": "Plant"
+  },
+  {
+    "id": 1415,
+    "name": "Baby Leopard",
+    "jName": "Baby Leopard",
+    "level": 68,
+    "element": "Ghost",
+    "race": "Brute"
+  },
+  {
+    "id": 1416,
+    "name": "Evil Nymph",
+    "jName": "Wicked Nymph",
+    "level": 97,
+    "element": "Shadow",
+    "race": "Demon"
+  },
+  {
+    "id": 1417,
+    "name": "Zipper Bear",
+    "jName": "Zipper Bear",
+    "level": 90,
+    "element": "Shadow",
+    "race": "Brute"
+  },
+  {
+    "id": 1493,
+    "name": "Dryad",
+    "jName": "Dryad",
+    "level": 68,
+    "element": "Earth",
+    "race": "Plant"
+  },
+  {
+    "id": 1494,
+    "name": "Beetle King",
+    "jName": "Beetle King",
+    "level": 55,
+    "element": "Earth",
+    "race": "Insect"
+  },
+  {
+    "id": 1495,
+    "name": "Stone Shooter",
+    "jName": "Stone Shooter",
+    "level": 64,
+    "element": "Fire",
+    "race": "Plant"
+  },
+  {
+    "id": 1497,
+    "name": "Wooden Golem",
+    "jName": "Wooden Golem",
+    "level": 72,
+    "element": "Earth",
+    "race": "Plant"
+  },
+  {
+    "id": 1498,
+    "name": "Wootan Shooter",
+    "jName": "Wootan Shooter",
+    "level": 67,
+    "element": "Earth",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1499,
+    "name": "Wootan Fighter",
+    "jName": "Wootan Fighter",
+    "level": 67,
+    "element": "Fire",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1500,
+    "name": "Parasite",
+    "jName": "Parasite",
+    "level": 76,
+    "element": "Wind",
+    "race": "Plant"
+  },
+  {
+    "id": 1503,
+    "name": "Gibbet",
+    "jName": "Gibbet",
+    "level": 105,
+    "element": "Shadow",
+    "race": "Demon"
+  },
+  {
+    "id": 1504,
+    "name": "Dullahan",
+    "jName": "Dullahan",
+    "level": 108,
+    "element": "Corrupt",
+    "race": "Undead"
+  },
+  {
+    "id": 1505,
+    "name": "Loli Ruri",
+    "jName": "Loli Ruri",
+    "level": 115,
+    "element": "Shadow",
+    "race": "Demon"
+  },
+  {
+    "id": 1506,
+    "name": "Disguise",
+    "jName": "Disguise",
+    "level": 105,
+    "element": "Earth",
+    "race": "Demon"
+  },
+  {
+    "id": 1507,
+    "name": "Bloody Murderer",
+    "jName": "Bloody Murderer",
+    "level": 112,
+    "element": "Shadow",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1508,
+    "name": "Quve",
+    "jName": "Quve",
+    "level": 100,
+    "element": "Corrupt",
+    "race": "Undead"
+  },
+  {
+    "id": 1509,
+    "name": "Lude",
+    "jName": "Lude",
+    "level": 100,
+    "element": "Corrupt",
+    "race": "Undead"
+  },
+  {
+    "id": 1510,
+    "name": "Heirozoist",
+    "jName": "Hylozoist",
+    "level": 107,
+    "element": "Shadow",
+    "race": "Demon"
+  },
+  {
+    "id": 1512,
+    "name": "Yao Jun",
+    "jName": "Hyegun",
+    "level": 87,
+    "element": "Corrupt",
+    "race": "Undead"
+  },
+  {
+    "id": 1513,
+    "name": "Mao Guai",
+    "jName": "Civil Servant",
+    "level": 89,
+    "element": "Wind",
+    "race": "Brute"
+  },
+  {
+    "id": 1514,
+    "name": "Zhu Po Long",
+    "jName": "Dancing Dragon",
+    "level": 82,
+    "element": "Wind",
+    "race": "Dragon"
+  },
+  {
+    "id": 1515,
+    "name": "Baby Hatii",
+    "jName": "Garm Baby",
+    "level": 90,
+    "element": "Water",
+    "race": "Brute"
+  },
+  {
+    "id": 1516,
+    "name": "Mi Gao",
+    "jName": "Increase Soil",
+    "level": 83,
+    "element": "Earth",
+    "race": "Formless"
+  },
+  {
+    "id": 1517,
+    "name": "Jing Guai",
+    "jName": "Li Me Mang Ryang",
+    "level": 80,
+    "element": "Earth",
+    "race": "Demon"
+  },
+  {
+    "id": 1520,
+    "name": "Boiled Rice",
+    "jName": "Boiled Rice",
+    "level": 90,
+    "element": "Water",
+    "race": "Plant"
+  },
+  {
+    "id": 1582,
+    "name": "Deviling",
+    "jName": "Deviling",
+    "level": 130,
+    "element": "Shadow",
+    "race": "Demon"
+  },
+  {
+    "id": 1584,
+    "name": "Tamruan",
+    "jName": "Tamruan",
+    "level": 73,
+    "element": "Shadow",
+    "race": "Demon"
+  },
+  {
+    "id": 1585,
+    "name": "Mime Monkey",
+    "jName": "Mime Monkey",
+    "level": 130,
+    "element": "Water",
+    "race": "Brute"
+  },
+  {
+    "id": 1586,
+    "name": "Leaf Cat",
+    "jName": "Leaf Cat",
+    "level": 64,
+    "element": "Earth",
+    "race": "Brute"
+  },
+  {
+    "id": 1587,
+    "name": "Kraben",
+    "jName": "Kraben",
+    "level": 70,
+    "element": "Ghost",
+    "race": "Formless"
+  },
+  {
+    "id": 1613,
+    "name": "Metaling",
+    "jName": "Metaling",
+    "level": 81,
+    "element": "Neutral",
+    "race": "Formless"
+  },
+  {
+    "id": 1614,
+    "name": "Mineral",
+    "jName": "Mineral",
+    "level": 96,
+    "element": "Neutral",
+    "race": "Formless"
+  },
+  {
+    "id": 1615,
+    "name": "Obsidian",
+    "jName": "Obsidian",
+    "level": 97,
+    "element": "Earth",
+    "race": "Formless"
+  },
+  {
+    "id": 1616,
+    "name": "Pitman",
+    "jName": "Pitman",
+    "level": 90,
+    "element": "Earth",
+    "race": "Undead"
+  },
+  {
+    "id": 1617,
+    "name": "Old Stove",
+    "jName": "Waste Stove",
+    "level": 92,
+    "element": "Neutral",
+    "race": "Formless"
+  },
+  {
+    "id": 1619,
+    "name": "Porcellio",
+    "jName": "Porcellio",
+    "level": 85,
+    "element": "Earth",
+    "race": "Insect"
+  },
+  {
+    "id": 1620,
+    "name": "Noxious",
+    "jName": "Noxious",
+    "level": 87,
+    "element": "Ghost",
+    "race": "Formless"
+  },
+  {
+    "id": 1621,
+    "name": "Venomous",
+    "jName": "Venomous",
+    "level": 87,
+    "element": "Poison",
+    "race": "Formless"
+  },
+  {
+    "id": 1622,
+    "name": "Teddy Bear",
+    "jName": "Teddy Bear",
+    "level": 91,
+    "element": "Neutral",
+    "race": "Formless"
+  },
+  {
+    "id": 1627,
+    "name": "Anopheles",
+    "jName": "Anopheles",
+    "level": 95,
+    "element": "Wind",
+    "race": "Insect"
+  },
+  {
+    "id": 1628,
+    "name": "Holden",
+    "jName": "Mole",
+    "level": 85,
+    "element": "Earth",
+    "race": "Brute"
+  },
+  {
+    "id": 1631,
+    "name": "Green Maiden",
+    "jName": "Chung E",
+    "level": 82,
+    "element": "Wind",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1632,
+    "name": "Gremlin",
+    "jName": "Gremlin",
+    "level": 110,
+    "element": "Shadow",
+    "race": "Demon"
+  },
+  {
+    "id": 1633,
+    "name": "Beholder",
+    "jName": "Beholder",
+    "level": 110,
+    "element": "Wind",
+    "race": "Formless"
+  },
+  {
+    "id": 1668,
+    "name": "Archdam",
+    "jName": "Archdam",
+    "level": 110,
+    "element": "Neutral",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1669,
+    "name": "Dimik",
+    "jName": "Dimik",
+    "level": 112,
+    "element": "Neutral",
+    "race": "Formless"
+  },
+  {
+    "id": 1670,
+    "name": "Dimik",
+    "jName": "Dimik",
+    "level": 112,
+    "element": "Wind",
+    "race": "Formless"
+  },
+  {
+    "id": 1671,
+    "name": "Dimik",
+    "jName": "Dimik",
+    "level": 112,
+    "element": "Water",
+    "race": "Formless"
+  },
+  {
+    "id": 1672,
+    "name": "Dimik",
+    "jName": "Dimik",
+    "level": 112,
+    "element": "Earth",
+    "race": "Formless"
+  },
+  {
+    "id": 1673,
+    "name": "Dimik",
+    "jName": "Dimik",
+    "level": 112,
+    "element": "Fire",
+    "race": "Formless"
+  },
+  {
+    "id": 1675,
+    "name": "Venatu",
+    "jName": "Venatu",
+    "level": 102,
+    "element": "Fire",
+    "race": "Formless"
+  },
+  {
+    "id": 1676,
+    "name": "Venatu",
+    "jName": "Venatu",
+    "level": 102,
+    "element": "Neutral",
+    "race": "Formless"
+  },
+  {
+    "id": 1677,
+    "name": "Venatu",
+    "jName": "Venatu",
+    "level": 102,
+    "element": "Wind",
+    "race": "Formless"
+  },
+  {
+    "id": 1678,
+    "name": "Venatu",
+    "jName": "Venatu",
+    "level": 102,
+    "element": "Earth",
+    "race": "Formless"
+  },
+  {
+    "id": 1679,
+    "name": "Venatu",
+    "jName": "Venatu",
+    "level": 102,
+    "element": "Water",
+    "race": "Formless"
+  },
+  {
+    "id": 1680,
+    "name": "Hill Wind",
+    "jName": "Hill Wind",
+    "level": 97,
+    "element": "Wind",
+    "race": "Brute"
+  },
+  {
+    "id": 1686,
+    "name": "Orc Baby",
+    "jName": "Orc Baby",
+    "level": 43,
+    "element": "Earth",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1687,
+    "name": "Grove",
+    "jName": "Green Iguana",
+    "level": 55,
+    "element": "Earth",
+    "race": "Brute"
+  },
+  {
+    "id": 1692,
+    "name": "Breeze",
+    "jName": "Breeze",
+    "level": 92,
+    "element": "Wind",
+    "race": "Formless"
+  },
+  {
+    "id": 1693,
+    "name": "Plasma",
+    "jName": "Plasma",
+    "level": 105,
+    "element": "Wind",
+    "race": "Formless"
+  },
+  {
+    "id": 1694,
+    "name": "Plasma",
+    "jName": "Plasma",
+    "level": 105,
+    "element": "Fire",
+    "race": "Formless"
+  },
+  {
+    "id": 1695,
+    "name": "Plasma",
+    "jName": "Plasma",
+    "level": 105,
+    "element": "Earth",
+    "race": "Formless"
+  },
+  {
+    "id": 1696,
+    "name": "Plasma",
+    "jName": "Plasma",
+    "level": 110,
+    "element": "Neutral",
+    "race": "Formless"
+  },
+  {
+    "id": 1697,
+    "name": "Plasma",
+    "jName": "Plasma",
+    "level": 105,
+    "element": "Water",
+    "race": "Formless"
+  },
+  {
+    "id": 1699,
+    "name": "Ancient Mimic",
+    "jName": "Ancient Mimic",
+    "level": 112,
+    "element": "Neutral",
+    "race": "Formless"
+  },
+  {
+    "id": 1713,
+    "name": "Gold Acidus",
+    "jName": "Gold Acidus",
+    "level": 121,
+    "element": "Holy",
+    "race": "Dragon"
+  },
+  {
+    "id": 1714,
+    "name": "Red Ferus",
+    "jName": "Red Ferus",
+    "level": 115,
+    "element": "Fire",
+    "race": "Dragon"
+  },
+  {
+    "id": 1715,
+    "name": "Scarlus",
+    "jName": "Scarlus",
+    "level": 100,
+    "element": "Neutral",
+    "race": "Dragon"
+  },
+  {
+    "id": 1716,
+    "name": "Blue Acidus",
+    "jName": "Blue Acidus",
+    "level": 117,
+    "element": "Wind",
+    "race": "Dragon"
+  },
+  {
+    "id": 1717,
+    "name": "Green Ferus",
+    "jName": "Green Ferus",
+    "level": 115,
+    "element": "Earth",
+    "race": "Dragon"
+  },
+  {
+    "id": 1718,
+    "name": "Novus",
+    "jName": "Novus",
+    "level": 100,
+    "element": "Neutral",
+    "race": "Dragon"
+  },
+  {
+    "id": 1720,
+    "name": "Hydrolancer",
+    "jName": "Hydro",
+    "level": 130,
+    "element": "Shadow",
+    "race": "Dragon"
+  },
+  {
+    "id": 1721,
+    "name": "Dragon Egg",
+    "jName": "Dragon Egg",
+    "level": 100,
+    "element": "Neutral",
+    "race": "Dragon"
+  },
+  {
+    "id": 1735,
+    "name": "Alicel",
+    "jName": "Alicel",
+    "level": 115,
+    "element": "Neutral",
+    "race": "Demon"
+  },
+  {
+    "id": 1736,
+    "name": "Aliot",
+    "jName": "Aliot",
+    "level": 115,
+    "element": "Neutral",
+    "race": "Demon"
+  },
+  {
+    "id": 1737,
+    "name": "Aliza",
+    "jName": "Aliza",
+    "level": 112,
+    "element": "Neutral",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1738,
+    "name": "Constant",
+    "jName": "Constant",
+    "level": 108,
+    "element": "Shadow",
+    "race": "Formless"
+  },
+  {
+    "id": 1752,
+    "name": "Skogul",
+    "jName": "Skogul",
+    "level": 118,
+    "element": "Shadow",
+    "race": "Demon"
+  },
+  {
+    "id": 1753,
+    "name": "Frus",
+    "jName": "Frus",
+    "level": 116,
+    "element": "Shadow",
+    "race": "Demon"
+  },
+  {
+    "id": 1754,
+    "name": "Skeggiold",
+    "jName": "Skeggiold",
+    "level": 115,
+    "element": "Holy",
+    "race": "Angel"
+  },
+  {
+    "id": 1755,
+    "name": "Skeggiold",
+    "jName": "Skeggiold",
+    "level": 115,
+    "element": "Holy",
+    "race": "Angel"
+  },
+  {
+    "id": 1769,
+    "name": "Agav",
+    "jName": "Agav",
+    "level": 125,
+    "element": "Neutral",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1770,
+    "name": "Echio",
+    "jName": "Echio",
+    "level": 125,
+    "element": "Neutral",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1771,
+    "name": "Vanberk",
+    "jName": "Vanberk",
+    "level": 105,
+    "element": "Neutral",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1772,
+    "name": "Isilla",
+    "jName": "Isilla",
+    "level": 105,
+    "element": "Neutral",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1773,
+    "name": "Hodremlin",
+    "jName": "Hodremlin",
+    "level": 110,
+    "element": "Shadow",
+    "race": "Demon"
+  },
+  {
+    "id": 1774,
+    "name": "Seeker",
+    "jName": "Seeker",
+    "level": 117,
+    "element": "Wind",
+    "race": "Formless"
+  },
+  {
+    "id": 1775,
+    "name": "Snowier",
+    "jName": "Snowier",
+    "level": 123,
+    "element": "Water",
+    "race": "Formless"
+  },
+  {
+    "id": 1776,
+    "name": "Siroma",
+    "jName": "Siroma",
+    "level": 105,
+    "element": "Water",
+    "race": "Formless"
+  },
+  {
+    "id": 1777,
+    "name": "Ice Titan",
+    "jName": "Ice Titan",
+    "level": 125,
+    "element": "Water",
+    "race": "Formless"
+  },
+  {
+    "id": 1778,
+    "name": "Gazeti",
+    "jName": "Gazeti",
+    "level": 119,
+    "element": "Water",
+    "race": "Demon"
+  },
+  {
+    "id": 1780,
+    "name": "Muscipular",
+    "jName": "Muscipular",
+    "level": 97,
+    "element": "Earth",
+    "race": "Plant"
+  },
+  {
+    "id": 1781,
+    "name": "Drosera",
+    "jName": "Drosera",
+    "level": 98,
+    "element": "Earth",
+    "race": "Plant"
+  },
+  {
+    "id": 1782,
+    "name": "Roween",
+    "jName": "Roween",
+    "level": 95,
+    "element": "Wind",
+    "race": "Brute"
+  },
+  {
+    "id": 1783,
+    "name": "Galion",
+    "jName": "Galion",
+    "level": 100,
+    "element": "Wind",
+    "race": "Brute"
+  },
+  {
+    "id": 1784,
+    "name": "Stapo",
+    "jName": "Stapo",
+    "level": 95,
+    "element": "Earth",
+    "race": "Formless"
+  },
+  {
+    "id": 1789,
+    "name": "Iceicle",
+    "jName": "Iceicle",
+    "level": 110,
+    "element": "Water",
+    "race": "Formless"
+  },
+  {
+    "id": 1796,
+    "name": "Aunoe",
+    "jName": "Aunoe",
+    "level": 115,
+    "element": "Neutral",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1797,
+    "name": "Fanat",
+    "jName": "Fanat",
+    "level": 115,
+    "element": "Neutral",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1829,
+    "name": "Sword Guardian",
+    "jName": "Sword Guardian",
+    "level": 110,
+    "element": "Neutral",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1830,
+    "name": "Bow Guardian",
+    "jName": "Bow Guardian",
+    "level": 110,
+    "element": "Neutral",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1831,
+    "name": "Salamander",
+    "jName": "Salamander",
+    "level": 125,
+    "element": "Fire",
+    "race": "Formless"
+  },
+  {
+    "id": 1833,
+    "name": "Kasa",
+    "jName": "Kasa",
+    "level": 118,
+    "element": "Fire",
+    "race": "Formless"
+  },
+  {
+    "id": 1836,
+    "name": "Magmaring",
+    "jName": "Magmaring",
+    "level": 105,
+    "element": "Fire",
+    "race": "Formless"
+  },
+  {
+    "id": 1837,
+    "name": "Imp",
+    "jName": "Imp",
+    "level": 110,
+    "element": "Fire",
+    "race": "Demon"
+  },
+  {
+    "id": 1838,
+    "name": "Knocker",
+    "jName": "Knocker",
+    "level": 115,
+    "element": "Earth",
+    "race": "Demon"
+  },
+  {
+    "id": 1839,
+    "name": "Byrogue",
+    "jName": "Byrogue",
+    "level": 130,
+    "element": "Neutral",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1864,
+    "name": "Zombie Slaughter",
+    "jName": "Zombie Slaughter",
+    "level": 124,
+    "element": "Corrupt",
+    "race": "Undead"
+  },
+  {
+    "id": 1865,
+    "name": "Ragged Zombie",
+    "jName": "Ragged Zombie",
+    "level": 113,
+    "element": "Corrupt",
+    "race": "Undead"
+  },
+  {
+    "id": 1866,
+    "name": "Hell Poodle",
+    "jName": "Hell Poodle",
+    "level": 110,
+    "element": "Shadow",
+    "race": "Demon"
+  },
+  {
+    "id": 1867,
+    "name": "Banshee",
+    "jName": "Banshee",
+    "level": 113,
+    "element": "Shadow",
+    "race": "Demon"
+  },
+  {
+    "id": 1869,
+    "name": "Flame Skull",
+    "jName": "Flame Skull",
+    "level": 117,
+    "element": "Ghost",
+    "race": "Demon"
+  },
+  {
+    "id": 1870,
+    "name": "Necromancer",
+    "jName": "Necromancer",
+    "level": 130,
+    "element": "Corrupt",
+    "race": "Undead"
+  },
+  {
+    "id": 1872,
+    "name": "Hell Fly",
+    "jName": "Hell Fly",
+    "level": 122,
+    "element": "Shadow",
+    "race": "Insect"
+  },
+  {
+    "id": 1875,
+    "name": "Tristan III",
+    "jName": "Tristan III",
+    "level": 110,
+    "element": "Corrupt",
+    "race": "Undead"
+  },
+  {
+    "id": 1880,
+    "name": "Leshij",
+    "jName": "Wood Goblin",
+    "level": 81,
+    "element": "Earth",
+    "race": "Plant"
+  },
+  {
+    "id": 1881,
+    "name": "Lesavka",
+    "jName": "Les",
+    "level": 82,
+    "element": "Earth",
+    "race": "Plant"
+  },
+  {
+    "id": 1882,
+    "name": "Baba-Yaga",
+    "jName": "Baba Yaga",
+    "level": 90,
+    "element": "Water",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1883,
+    "name": "Kikimora",
+    "jName": "Uzhas",
+    "level": 85,
+    "element": "Water",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1884,
+    "name": "Mavka",
+    "jName": "Mavka",
+    "level": 84,
+    "element": "Earth",
+    "race": "Plant"
+  },
+  {
+    "id": 1894,
+    "name": "Pouring",
+    "jName": "Pouring",
+    "level": 90,
+    "element": "Water",
+    "race": "Plant"
+  },
+  {
+    "id": 1921,
+    "name": "Spectre",
+    "jName": "Spectre",
+    "level": 110,
+    "element": "Ghost",
+    "race": "Demon"
+  },
+  {
+    "id": 1974,
+    "name": "Damned Mourner",
+    "jName": "Damned Mourner",
+    "level": 125,
+    "element": "Shadow",
+    "race": "Demon"
+  },
+  {
+    "id": 1975,
+    "name": "Oraculum",
+    "jName": "Oraculum",
+    "level": 122,
+    "element": "Wind",
+    "race": "Formless"
+  },
+  {
+    "id": 1977,
+    "name": "Heavy Metaling",
+    "jName": "Heavy Metaling",
+    "level": 110,
+    "element": "Neutral",
+    "race": "Formless"
+  },
+  {
+    "id": 1978,
+    "name": "Hell Apocalypse",
+    "jName": "Hell Apocalips",
+    "level": 118,
+    "element": "Neutral",
+    "race": "Formless"
+  },
+  {
+    "id": 1979,
+    "name": "Zakudam",
+    "jName": "Zukadam",
+    "level": 118,
+    "element": "Neutral",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 1980,
+    "name": "Kublin",
+    "jName": "Kublin",
+    "level": 130,
+    "element": "Earth",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 2093,
+    "name": "Botaring",
+    "jName": "Botaring",
+    "level": 110,
+    "element": "Holy",
+    "race": "Formless"
+  },
+  {
+    "id": 2358,
+    "name": "Maggot",
+    "jName": "Nightmare Arclouse",
+    "level": 105,
+    "element": "Earth",
+    "race": "Insect"
+  },
+  {
+    "id": 2467,
+    "name": "Maggot",
+    "jName": "Maggot",
+    "level": 133,
+    "element": "Earth",
+    "race": "Insect"
+  },
+  {
+    "id": 2916,
+    "name": "Big Ben",
+    "jName": "Big Ben",
+    "level": 114,
+    "element": "Earth",
+    "race": "Formless"
+  },
+  {
+    "id": 2917,
+    "name": "Big Bell",
+    "jName": "Big Bell",
+    "level": 113,
+    "element": "Neutral",
+    "race": "Formless"
+  },
+  {
+    "id": 2921,
+    "name": "Owl Viscount",
+    "jName": "Owl Viscount",
+    "level": 110,
+    "element": "Neutral",
+    "race": "Demon"
+  },
+  {
+    "id": 2923,
+    "name": "Owl Marquis",
+    "jName": "Owl Marquis",
+    "level": 110,
+    "element": "Neutral",
+    "race": "Demon"
+  },
+  {
+    "id": 3027,
+    "name": "Fire Bug",
+    "jName": "Fire Bug",
+    "level": 95,
+    "element": "Fire",
+    "race": "Insect"
+  },
+  {
+    "id": 3125,
+    "name": "Step",
+    "jName": "Step",
+    "level": 105,
+    "element": "Neutral",
+    "race": "Demon"
+  },
+  {
+    "id": 3126,
+    "name": "Lockstep",
+    "jName": "Lockstep",
+    "level": 130,
+    "element": "Neutral",
+    "race": "Demon"
+  },
+  {
+    "id": 3173,
+    "name": "Iskralisa",
+    "jName": "Iskralisa",
+    "level": 130,
+    "element": "Fire",
+    "race": "Demon"
+  },
+  {
+    "id": 3251,
+    "name": "Vengeful AI",
+    "jName": "Vengeful AI",
+    "level": 112,
+    "element": "Shadow",
+    "race": "Formless"
+  },
+  {
+    "id": 3442,
+    "name": "Frozen Wolf",
+    "jName": "Frozenwolf",
+    "level": 110,
+    "element": "Water",
+    "race": "Brute"
+  },
+  {
+    "id": 3443,
+    "name": "Taffy",
+    "jName": "Taffy",
+    "level": 130,
+    "element": "Earth",
+    "race": "Brute"
+  },
+  {
+    "id": 3444,
+    "name": "Watcher",
+    "jName": "Watcher",
+    "level": 110,
+    "element": "Wind",
+    "race": "Formless"
+  },
+  {
+    "id": 3495,
+    "name": "Eggring",
+    "jName": "Eggring",
+    "level": 90,
+    "element": "Earth",
+    "race": "Plant"
+  },
+  {
+    "id": 3496,
+    "name": "Leafatic",
+    "jName": "Leafatic",
+    "level": 3,
+    "element": "Neutral",
+    "race": "Brute"
+  },
+  {
+    "id": 3501,
+    "name": "River Spore",
+    "jName": "River Spore",
+    "level": 22,
+    "element": "Water",
+    "race": "Plant"
+  },
+  {
+    "id": 3522,
+    "name": "Enraged Priest",
+    "jName": "Enraged Priest",
+    "level": 130,
+    "element": "Neutral",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 3740,
+    "name": "Gaster",
+    "jName": "Gaster",
+    "level": 100,
+    "element": "Poison",
+    "race": "Formless"
+  },
+  {
+    "id": 20179,
+    "name": "Sieglouse",
+    "jName": "Sieglouse",
+    "level": 97,
+    "element": "Earth",
+    "race": "Insect"
+  },
+  {
+    "id": 20347,
+    "name": "Baihu",
+    "jName": "Baihu",
+    "level": 130,
+    "element": "Wind",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 20366,
+    "name": "Tattler Sisters",
+    "jName": "Tattler Sisters",
+    "level": 130,
+    "element": "Shadow",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 20369,
+    "name": "Frozen Gargoyle",
+    "jName": "Frozen Gargoyle",
+    "level": 110,
+    "element": "Water",
+    "race": "Demon"
+  },
+  {
+    "id": 20580,
+    "name": "Cursed Servant",
+    "jName": "Cursed Servant",
+    "level": 105,
+    "element": "Corrupt",
+    "race": "Undead"
+  },
+  {
+    "id": 20606,
+    "name": "Holy Frus",
+    "jName": "Holy Frus",
+    "level": 121,
+    "element": "Holy",
+    "race": "Demon"
+  },
+  {
+    "id": 20607,
+    "name": "Holy Skogul",
+    "jName": "Holy Skogul",
+    "level": 122,
+    "element": "Holy",
+    "race": "Demon"
+  },
+  {
+    "id": 20608,
+    "name": "Arch Plasma",
+    "jName": "Arch Plasma",
+    "level": 110,
+    "element": "Neutral",
+    "race": "Formless"
+  },
+  {
+    "id": 20612,
+    "name": "Purple Ferus",
+    "jName": "Purple Ferus",
+    "level": 110,
+    "element": "Poison",
+    "race": "Dragon"
+  },
+  {
+    "id": 20614,
+    "name": "Black Acidus",
+    "jName": "Black Acidus",
+    "level": 118,
+    "element": "Shadow",
+    "race": "Dragon"
+  },
+  {
+    "id": 20615,
+    "name": "Silver Acidus",
+    "jName": "Silver Acidus",
+    "level": 122,
+    "element": "Ghost",
+    "race": "Dragon"
+  },
+  {
+    "id": 20635,
+    "name": "Cleaning Robot",
+    "jName": "Cleaning Robot",
+    "level": 110,
+    "element": "Neutral",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 20640,
+    "name": "Robby",
+    "jName": "Robby",
+    "level": 105,
+    "element": "Neutral",
+    "race": "Formless"
+  },
+  {
+    "id": 20889,
+    "name": "Brain Sucker",
+    "jName": "Brain Sucker",
+    "level": 130,
+    "element": "Shadow",
+    "race": "Insect"
+  },
+  {
+    "id": 21296,
+    "name": "Rakehand",
+    "jName": "Rakehand",
+    "level": 110,
+    "element": "Earth",
+    "race": "Plant"
+  },
+  {
+    "id": 21297,
+    "name": "Spark",
+    "jName": "Spark",
+    "level": 122,
+    "element": "Fire",
+    "race": "Formless"
+  },
+  {
+    "id": 21298,
+    "name": "Hot Molar",
+    "jName": "Hot Molar",
+    "level": 107,
+    "element": "Neutral",
+    "race": "Brute"
+  },
+  {
+    "id": 21299,
+    "name": "Volcaring",
+    "jName": "Volcaring",
+    "level": 105,
+    "element": "Fire",
+    "race": "Formless"
+  },
+  {
+    "id": 21300,
+    "name": "Lava Toad",
+    "jName": "Lava Toad",
+    "level": 110,
+    "element": "Fire",
+    "race": "Brute"
+  },
+  {
+    "id": 21302,
+    "name": "Ashhopper",
+    "jName": "Ashhopper",
+    "level": 100,
+    "element": "Shadow",
+    "race": "Insect"
+  },
+  {
+    "id": 21303,
+    "name": "Ashring",
+    "jName": "Ashring",
+    "level": 103,
+    "element": "Neutral",
+    "race": "Formless"
+  },
+  {
+    "id": 23007,
+    "name": "Snow Wolf",
+    "jName": "Snow Wolf",
+    "level": 97,
+    "element": "Water",
+    "race": "Brute"
+  },
+  {
+    "id": 23008,
+    "name": "Baby Snow Wolf",
+    "jName": "Baby Snow Wolf",
+    "level": 21,
+    "element": "Water",
+    "race": "Brute"
+  },
+  {
+    "id": 23012,
+    "name": "Silver Thief Bug",
+    "jName": "Silver Thief Bug",
+    "level": 130,
+    "element": "Neutral",
+    "race": "Insect"
+  },
+  {
+    "id": 23013,
+    "name": "Bronze Thief Bug",
+    "jName": "Bronze Thief Bug",
+    "level": 20,
+    "element": "Neutral",
+    "race": "Insect"
+  },
+  {
+    "id": 23015,
+    "name": "Swamp Spore",
+    "jName": "Swamp Spore",
+    "level": 115,
+    "element": "Earth",
+    "race": "Plant"
+  },
+  {
+    "id": 23017,
+    "name": "Island Keeper",
+    "jName": "Island Keeper",
+    "level": 20,
+    "element": "Water",
+    "race": "Plant"
+  },
+  {
+    "id": 23018,
+    "name": "Buccaneer Skeleton",
+    "jName": "Buccaneer Skeleton",
+    "level": 114,
+    "element": "Corrupt",
+    "race": "Undead"
+  },
+  {
+    "id": 23019,
+    "name": "Corsair Skeleton",
+    "jName": "Corsair Skeleton",
+    "level": 117,
+    "element": "Corrupt",
+    "race": "Undead"
+  },
+  {
+    "id": 23020,
+    "name": "Backstabber Skeleton",
+    "jName": "Backstabber Skeleton",
+    "level": 119,
+    "element": "Corrupt",
+    "race": "Undead"
+  },
+  {
+    "id": 23024,
+    "name": "High Orc Archer",
+    "jName": "High Orc Archer",
+    "level": 93,
+    "element": "Earth",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 23025,
+    "name": "Morbliar",
+    "jName": "Morbliar",
+    "level": 62,
+    "element": "Shadow",
+    "race": "Brute"
+  },
+  {
+    "id": 23026,
+    "name": "Sanguinary Wolf",
+    "jName": "Sanguinary Wolf",
+    "level": 64,
+    "element": "Shadow",
+    "race": "Brute"
+  },
+  {
+    "id": 23027,
+    "name": "Drakul",
+    "jName": "Drakul",
+    "level": 67,
+    "element": "Shadow",
+    "race": "Dragon"
+  },
+  {
+    "id": 23028,
+    "name": "Baby Wolf",
+    "jName": "Baby Wolf",
+    "level": 8,
+    "element": "Earth",
+    "race": "Brute"
+  },
+  {
+    "id": 23029,
+    "name": "Andre",
+    "jName": "Andre",
+    "level": 33,
+    "element": "Earth",
+    "race": "Insect"
+  },
+  {
+    "id": 23030,
+    "name": "Deniro",
+    "jName": "Deniro",
+    "level": 31,
+    "element": "Earth",
+    "race": "Insect"
+  },
+  {
+    "id": 23031,
+    "name": "Piere",
+    "jName": "Piere",
+    "level": 32,
+    "element": "Earth",
+    "race": "Insect"
+  },
+  {
+    "id": 23036,
+    "name": "Maple Rafflesia",
+    "jName": "Maple Rafflesia",
+    "level": 71,
+    "element": "Earth",
+    "race": "Plant"
+  },
+  {
+    "id": 23041,
+    "name": "Caramello",
+    "jName": "Caramello",
+    "level": 29,
+    "element": "Earth",
+    "race": "Brute"
+  },
+  {
+    "id": 23042,
+    "name": "Green Mushroom",
+    "jName": "Green Mushroom",
+    "level": 1,
+    "element": "Earth",
+    "race": "Plant"
+  },
+  {
+    "id": 23043,
+    "name": "Yellow Mushroom",
+    "jName": "Yellow Mushroom",
+    "level": 1,
+    "element": "Earth",
+    "race": "Plant"
+  },
+  {
+    "id": 23044,
+    "name": "Black Mushroom",
+    "jName": "Black Mushroom",
+    "level": 1,
+    "element": "Earth",
+    "race": "Plant"
+  },
+  {
+    "id": 23045,
+    "name": "White Mushroom",
+    "jName": "White Mushroom",
+    "level": 1,
+    "element": "Earth",
+    "race": "Plant"
+  },
+  {
+    "id": 23046,
+    "name": "Shining Mushroom",
+    "jName": "Shining Mushroom",
+    "level": 1,
+    "element": "Earth",
+    "race": "Plant"
+  },
+  {
+    "id": 23054,
+    "name": "High Orc Lady",
+    "jName": "High Orc Lady",
+    "level": 87,
+    "element": "Earth",
+    "race": "DemiHuman"
+  },
+  {
+    "id": 23056,
+    "name": "Sanring",
+    "jName": "Sanring",
+    "level": 35,
+    "element": "Holy",
+    "race": "Plant"
+  },
+  {
+    "id": 23057,
+    "name": "Peace Dove",
+    "jName": "Peace Dove",
+    "level": 48,
+    "element": "Wind",
+    "race": "Angel"
+  },
+  {
+    "id": 23058,
+    "name": "Kairon",
+    "jName": "Kairon",
+    "level": 72,
+    "element": "Ghost",
+    "race": "Angel"
+  },
+  {
+    "id": 23060,
+    "name": "Huka",
+    "jName": "Huka",
+    "level": 99,
+    "element": "Poison",
+    "race": "Plant"
+  },
+  {
+    "id": 23061,
+    "name": "Plague",
+    "jName": "Plague",
+    "level": 3,
+    "element": "Shadow",
+    "race": "Angel"
+  },
+  {
+    "id": 23062,
+    "name": "Tamarugo",
+    "jName": "Tamarugo",
+    "level": 99,
+    "element": "Earth",
+    "race": "Plant"
+  },
+  {
+    "id": 23063,
+    "name": "Mudring",
+    "jName": "Mudring",
+    "level": 115,
+    "element": "Earth",
+    "race": "Formless"
+  },
+  {
+    "id": 23064,
+    "name": "Ludwigia",
+    "jName": "Ludwigia",
+    "level": 105,
+    "element": "Shadow",
+    "race": "Plant"
+  },
+  {
+    "id": 23065,
+    "name": "Luminopheles",
+    "jName": "Luminopheles",
+    "level": 101,
+    "element": "Poison",
+    "race": "Insect"
+  },
+  {
+    "id": 23066,
+    "name": "Femmire",
+    "jName": "Femmire",
+    "level": 130,
+    "element": "Water",
+    "race": "Formless"
+  },
+  {
+    "id": 23067,
+    "name": "Vodyanoy",
+    "jName": "Vodyanoy",
+    "level": 130,
+    "element": "Water",
+    "race": "Brute"
+  },
+  {
+    "id": 23068,
+    "name": "Ju-On",
+    "jName": "Ju-On",
+    "level": 130,
+    "element": "Shadow",
+    "race": "Undead"
+  },
+  {
+    "id": 23069,
+    "name": "Morajin",
+    "jName": "Morajin",
+    "level": 130,
+    "element": "Wind",
+    "race": "Fish"
+  },
+  {
+    "id": 23071,
+    "name": "Rideword",
+    "jName": "Rideword",
+    "level": 74,
+    "element": "Water",
+    "race": "Formless"
+  },
+  {
+    "id": 23072,
+    "name": "Rideword",
+    "jName": "Rideword",
+    "level": 74,
+    "element": "Wind",
+    "race": "Formless"
+  },
+  {
+    "id": 23073,
+    "name": "Rideword",
+    "jName": "Rideword",
+    "level": 74,
+    "element": "Fire",
+    "race": "Formless"
+  },
+  {
+    "id": 23074,
+    "name": "Rideword",
+    "jName": "Rideword",
+    "level": 74,
+    "element": "Earth",
+    "race": "Formless"
+  },
+  {
+    "id": 23075,
+    "name": "Araccryo",
+    "jName": "Araccryo",
+    "level": 130,
+    "element": "Water",
+    "race": "Insect"
+  },
+  {
+    "id": 23076,
+    "name": "Cryoscarn Golem",
+    "jName": "Cryoscarn Golem",
+    "level": 115,
+    "element": "Water",
+    "race": "Formless"
+  },
+  {
+    "id": 23077,
+    "name": "Teenus",
+    "jName": "Teenus",
+    "level": 110,
+    "element": "Poison",
+    "race": "Dragon"
+  },
+  {
+    "id": 23078,
+    "name": "Tundryas",
+    "jName": "Tundryas",
+    "level": 110,
+    "element": "Water",
+    "race": "Plant"
+  },
+  {
+    "id": 23079,
+    "name": "Kaeremlin",
+    "jName": "Kaeremlin",
+    "level": 119,
+    "element": "Neutral",
+    "race": "Demon"
+  },
+  {
+    "id": 23081,
+    "name": "Counselor",
+    "jName": "Counselor",
+    "level": 98,
+    "element": "Neutral",
+    "race": "Brute"
+  },
+  {
+    "id": 23082,
+    "name": "Kamebushi",
+    "jName": "Kamebushi",
+    "level": 110,
+    "element": "Neutral",
+    "race": "Brute"
+  },
+  {
+    "id": 23083,
+    "name": "Vitata",
+    "jName": "Vitata",
+    "level": 35,
+    "element": "Earth",
+    "race": "Insect"
+  },
+  {
+    "id": 23901,
+    "name": "Cruzcredo",
+    "jName": "Cruzcredo",
+    "level": 1,
+    "element": "Shadow",
+    "race": "Demon"
+  },
+  {
+    "id": 23903,
+    "name": "Wikked",
+    "jName": "Wikked",
+    "level": 1,
+    "element": "Shadow",
+    "race": "Demon"
+  }
+]
