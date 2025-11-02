@@ -199,6 +199,10 @@ export function BossTimeTracker() {
     }
   };
 
+  const handleRemoveTimer = (id: string) => {
+    setTimers(prev => prev.filter(t => t.id !== id));
+  };
+
   const getTimerForBoss = (bossId: number): BossTimerEntry | undefined => {
     return timers.find(t => t.bossId === bossId);
   };
@@ -421,14 +425,23 @@ export function BossTimeTracker() {
                               </span>
                             )}
 
-                            {/* Reset Button */}
-                            <button
-                              onClick={() => handleResetTimer(timer)}
-                              className="w-full px-2 py-1 bg-green-600/40 hover:bg-green-600/70 rounded text-xs transition-colors font-medium"
-                              title="Resetar timer - registrar nova morte"
-                            >
-                              Reset
-                            </button>
+                            {/* Action Buttons */}
+                            <div className="flex gap-1 w-full">
+                              <button
+                                onClick={() => handleResetTimer(timer)}
+                                className="flex-1 px-2 py-1 bg-blue-600/40 hover:bg-blue-600/70 rounded text-xs transition-colors font-medium"
+                                title="Resetar timer - registrar nova morte"
+                              >
+                                ↻
+                              </button>
+                              <button
+                                onClick={() => handleRemoveTimer(timer.id)}
+                                className="flex-1 px-2 py-1 bg-red-600/40 hover:bg-red-600/70 rounded text-xs transition-colors font-medium"
+                                title="Remover timer"
+                              >
+                                ✕
+                              </button>
+                            </div>
                           </div>
 
                           {/* RIGHT: Boss Info */}
