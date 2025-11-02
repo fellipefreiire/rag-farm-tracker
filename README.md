@@ -98,12 +98,12 @@ Após o deploy com as variáveis configuradas:
    - Se as variáveis de ambiente estão corretas na Vercel
    - Se você fez o redeploy após adicionar as variáveis
 
-### Modo Solo (Sem Supabase)
+### Sem Supabase Configurado
 
-O app funciona perfeitamente **sem** configurar o Supabase:
-- O Boss Time Tracker funcionará em modo local (dados salvos no navegador)
-- O botão de criar sala simplesmente não aparecerá
-- Todas as outras funcionalidades continuam funcionando normalmente
+Se você **não** configurar o Supabase:
+- O Boss Time Tracker não funcionará (mostrará erro)
+- Todas as outras funcionalidades do app (Farm Tracker, Optimizer, Planner, etc.) continuam funcionando normalmente
+- **Nota:** O Boss Time Tracker agora **requer salas compartilhadas** - não há mais modo solo/local
 
 ## Fluxo de Uso
 

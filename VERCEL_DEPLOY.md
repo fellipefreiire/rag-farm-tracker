@@ -35,9 +35,11 @@ Depois de salvar as variáveis:
 ### Passo 4: Verificar
 1. Acesse seu site em produção
 2. Vá para `/boss-tracker`
-3. Você deve ver o botão **"🚪 Criar/Entrar Sala"** no canto superior direito
-4. Clique nele e tente criar uma sala
+3. Você deve ver o modal de **"🚪 Gerenciar Sala"** para criar ou entrar em uma sala
+4. Tente criar uma sala com nome, senha e seu display name
 5. Deve funcionar sem erro 404!
+
+**IMPORTANTE:** O Boss Time Tracker agora **requer** que você esteja em uma sala compartilhada. Não há modo solo/local.
 
 ## Troubleshooting
 
@@ -46,10 +48,11 @@ Depois de salvar as variáveis:
 - Verifique se não há espaços extras nos valores das variáveis
 - Limpe o cache do navegador (Ctrl+Shift+R)
 
-### Botão de sala não aparece?
+### Modal de sala não aparece ou mostra erro?
 - Abra o Console do navegador (F12)
-- Procure por avisos sobre Supabase
+- Procure por avisos sobre Supabase não configurado
 - Verifique se as variáveis foram salvas corretamente na Vercel
+- Se você vir uma mensagem de erro sobre Supabase não configurado, significa que as variáveis de ambiente não foram carregadas corretamente
 
 ### Database errors?
 - Certifique-se de que executou o script SQL no Supabase
