@@ -30,6 +30,10 @@ export function SharedBossTimeTracker() {
   const [playerName, setPlayerName] = useState<string>('');
   const [hasCheckedReconnect, setHasCheckedReconnect] = useState(false);
 
+  // Confirmation modal for remove
+  const [showRemoveConfirm, setShowRemoveConfirm] = useState(false);
+  const [timerToRemove, setTimerToRemove] = useState<SharedBossTimer | null>(null);
+
   // Room hooks
   const { room, member, members, isConnected, isLoading: roomLoading, error: roomError, createRoom, joinRoom, leaveRoom } = useRoom();
 
@@ -124,14 +128,24 @@ export function SharedBossTimeTracker() {
     }
   };
 
-  const handleRemoveTimer = async (timer: SharedBossTimer) => {
-    const confirmed = window.confirm(
-      `Tem certeza que deseja remover o timer de ${timer.boss_name}?`
-    );
+  const handleRemoveTimer = (timer: SharedBossTimer) => {
+    setTimerToRemove(timer);
+    setShowRemoveConfirm(true);
+  };
 
-    if (confirmed) {
-      await removeTimer(timer.id);
+  const confirmRemoveTimer = async () => {
+    if (timerToRemove) {
+      console.log('Removing timer:', timerToRemove.id, timerToRemove.boss_name);
+      const success = await removeTimer(timerToRemove.id);
+      console.log('Remove success:', success);
+      setShowRemoveConfirm(false);
+      setTimerToRemove(null);
     }
+  };
+
+  const cancelRemoveTimer = () => {
+    setShowRemoveConfirm(false);
+    setTimerToRemove(null);
   };
 
   const getTimerForBoss = (bossId: number): SharedBossTimer | undefined => {
@@ -540,6 +554,38 @@ export function SharedBossTimeTracker() {
                 className="flex-1 px-4 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg font-bold transition-colors"
               >
                 ✓ Confirmar
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Remove Confirmation Modal */}
+      {showRemoveConfirm && timerToRemove && (
+        <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4">
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 border border-red-500/50 rounded-2xl p-6 max-w-md w-full shadow-2xl">
+            <h2 className="text-2xl font-bold mb-4 text-red-400 flex items-center gap-2">
+              <span className="text-3xl">⚠️</span>
+              Confirmar Remoção
+            </h2>
+
+            <p className="text-white mb-6">
+              Tem certeza que deseja remover o timer de{' '}
+              <span className="font-bold text-red-400">{timerToRemove.boss_name}</span>?
+            </p>
+
+            <div className="flex gap-3">
+              <button
+                onClick={cancelRemoveTimer}
+                className="flex-1 px-4 py-3 bg-gray-700 hover:bg-gray-600 rounded-lg font-bold transition-colors"
+              >
+                Cancelar
+              </button>
+              <button
+                onClick={confirmRemoveTimer}
+                className="flex-1 px-4 py-3 bg-red-600 hover:bg-red-700 rounded-lg font-bold transition-colors"
+              >
+                ✓ Remover
               </button>
             </div>
           </div>

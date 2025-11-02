@@ -30,6 +30,10 @@ export function BossTimeTracker() {
   const [playerName, setPlayerName] = useState<string>('');
   const [timerBeingReset, setTimerBeingReset] = useState<string | null>(null);
 
+  // Confirmation modal for remove
+  const [showRemoveConfirm, setShowRemoveConfirm] = useState(false);
+  const [timerToRemove, setTimerToRemove] = useState<BossTimerEntry | null>(null);
+
   // Get user's timezone offset in hours
   const userTimezoneOffset = new Date().getTimezoneOffset() / -60;
 
@@ -200,13 +204,22 @@ export function BossTimeTracker() {
   };
 
   const handleRemoveTimer = (timer: BossTimerEntry) => {
-    const confirmed = window.confirm(
-      `Tem certeza que deseja remover o timer de ${timer.bossName}?`
-    );
+    setTimerToRemove(timer);
+    setShowRemoveConfirm(true);
+  };
 
-    if (confirmed) {
-      setTimers(prev => prev.filter(t => t.id !== timer.id));
+  const confirmRemoveTimer = () => {
+    if (timerToRemove) {
+      console.log('Removing timer:', timerToRemove.id, timerToRemove.bossName);
+      setTimers(prev => prev.filter(t => t.id !== timerToRemove.id));
+      setShowRemoveConfirm(false);
+      setTimerToRemove(null);
     }
+  };
+
+  const cancelRemoveTimer = () => {
+    setShowRemoveConfirm(false);
+    setTimerToRemove(null);
   };
 
   const getTimerForBoss = (bossId: number): BossTimerEntry | undefined => {
@@ -547,6 +560,38 @@ export function BossTimeTracker() {
                 className="flex-1 px-4 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg font-bold transition-colors"
               >
                 ✓ Confirmar
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Remove Confirmation Modal */}
+      {showRemoveConfirm && timerToRemove && (
+        <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4">
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 border border-red-500/50 rounded-2xl p-6 max-w-md w-full shadow-2xl">
+            <h2 className="text-2xl font-bold mb-4 text-red-400 flex items-center gap-2">
+              <span className="text-3xl">⚠️</span>
+              Confirmar Remoção
+            </h2>
+
+            <p className="text-white mb-6">
+              Tem certeza que deseja remover o timer de{' '}
+              <span className="font-bold text-red-400">{timerToRemove.bossName}</span>?
+            </p>
+
+            <div className="flex gap-3">
+              <button
+                onClick={cancelRemoveTimer}
+                className="flex-1 px-4 py-3 bg-gray-700 hover:bg-gray-600 rounded-lg font-bold transition-colors"
+              >
+                Cancelar
+              </button>
+              <button
+                onClick={confirmRemoveTimer}
+                className="flex-1 px-4 py-3 bg-red-600 hover:bg-red-700 rounded-lg font-bold transition-colors"
+              >
+                ✓ Remover
               </button>
             </div>
           </div>
