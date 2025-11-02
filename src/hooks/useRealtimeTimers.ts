@@ -46,6 +46,8 @@ export function useRealtimeTimers({ roomId, member }: UseRealtimeTimersProps) {
   useEffect(() => {
     if (!supabase || !roomId) return;
 
+    console.log('Setting up realtime subscription for room:', roomId);
+
     const channel = supabase
       .channel(`boss_timers:${roomId}`)
       .on(
@@ -57,6 +59,7 @@ export function useRealtimeTimers({ roomId, member }: UseRealtimeTimersProps) {
           filter: `room_id=eq.${roomId}`,
         },
         (payload) => {
+          console.log('INSERT event received:', payload.new);
           setTimers(prev => [payload.new as SharedBossTimer, ...prev]);
         }
       )
@@ -69,6 +72,7 @@ export function useRealtimeTimers({ roomId, member }: UseRealtimeTimersProps) {
           filter: `room_id=eq.${roomId}`,
         },
         (payload) => {
+          console.log('UPDATE event received:', payload.new);
           setTimers(prev =>
             prev.map(t => (t.id === payload.new.id ? (payload.new as SharedBossTimer) : t))
           );
@@ -83,17 +87,22 @@ export function useRealtimeTimers({ roomId, member }: UseRealtimeTimersProps) {
           filter: `room_id=eq.${roomId}`,
         },
         (payload) => {
-          console.log('DELETE event received:', payload.old);
+          console.log('DELETE event received:', payload);
+          console.log('payload.old:', payload.old);
           setTimers(prev => {
+            console.log('Current timers:', prev.map(t => ({ id: t.id, name: t.boss_name })));
             const filtered = prev.filter(t => t.id !== payload.old.id);
-            console.log('Timers before delete:', prev.length, 'after:', filtered.length);
+            console.log('Filtered timers:', filtered.map(t => ({ id: t.id, name: t.boss_name })));
             return filtered;
           });
         }
       )
-      .subscribe();
+      .subscribe((status) => {
+        console.log('Realtime subscription status:', status);
+      });
 
     return () => {
+      console.log('Cleaning up realtime subscription');
       supabase!.removeChannel(channel);
     };
   }, [roomId]);

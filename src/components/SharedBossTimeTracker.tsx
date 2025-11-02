@@ -138,6 +138,14 @@ export function SharedBossTimeTracker() {
       console.log('Removing timer:', timerToRemove.id, timerToRemove.boss_name);
       const success = await removeTimer(timerToRemove.id);
       console.log('Remove success:', success);
+
+      if (success) {
+        // Force a small delay to allow realtime to process
+        setTimeout(() => {
+          console.log('Timer removal completed');
+        }, 500);
+      }
+
       setShowRemoveConfirm(false);
       setTimerToRemove(null);
     }
