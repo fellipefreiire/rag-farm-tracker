@@ -20,6 +20,7 @@ export function SharedBossTimeTracker() {
   const [minis] = useState<Boss[]>(() => getMiniList());
   const [currentTime, setCurrentTime] = useState<Date>(new Date());
   const [filterType, setFilterType] = useState<'all' | 'mvp' | 'mini'>('all');
+  const [searchTerm, setSearchTerm] = useState<string>('');
 
   // Modal states
   const [showRoomManager, setShowRoomManager] = useState(false);
@@ -142,9 +143,21 @@ export function SharedBossTimeTracker() {
   };
 
   const getBossesToDisplay = () => {
-    if (filterType === 'mvp') return mvps;
-    if (filterType === 'mini') return minis;
-    return bosses;
+    let filtered = bosses;
+
+    // Filter by type
+    if (filterType === 'mvp') filtered = mvps;
+    if (filterType === 'mini') filtered = minis;
+
+    // Filter by search term
+    if (searchTerm.trim()) {
+      filtered = filtered.filter(boss =>
+        boss.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        (boss.mapLocation && boss.mapLocation.toLowerCase().includes(searchTerm.toLowerCase()))
+      );
+    }
+
+    return filtered;
   };
 
   const getSortedTimers = () => {
@@ -222,6 +235,26 @@ export function SharedBossTimeTracker() {
           <div className="lg:col-span-3 flex flex-col overflow-hidden">
             <div className="bg-gradient-to-br from-gray-900/60 to-gray-800/60 backdrop-blur-sm border border-gray-700/50 rounded-xl p-3 shadow-2xl flex flex-col h-full overflow-hidden">
               <h2 className="text-lg font-bold mb-3">📋 Lista de Bosses</h2>
+
+              {/* Search Input */}
+              <div className="mb-3 relative">
+                <input
+                  type="text"
+                  value={searchTerm}
+                  onChange={(e) => setSearchTerm(e.target.value)}
+                  placeholder="🔍 Buscar boss por nome ou mapa..."
+                  className="w-full px-4 py-2 bg-gray-900/50 border border-gray-700 rounded-lg text-white text-sm placeholder-gray-500 focus:outline-none focus:border-purple-500 transition-colors"
+                />
+                {searchTerm && (
+                  <button
+                    onClick={() => setSearchTerm('')}
+                    className="absolute right-3 top-2.5 text-gray-400 hover:text-white transition-colors"
+                    title="Limpar busca"
+                  >
+                    ✕
+                  </button>
+                )}
+              </div>
 
               {/* Filter Buttons */}
               <div className="mb-3 flex flex-wrap gap-2">
