@@ -159,9 +159,6 @@ export function BossTimeTracker() {
 
       const killTime = killDate.getTime();
 
-      // Create local date for display
-      const localDate = new Date(killTime);
-
       const newTimer: BossTimerEntry = {
         id: `${Date.now()}-${selectedBoss.id}`,
         bossId: selectedBoss.id,
@@ -195,7 +192,6 @@ export function BossTimeTracker() {
   const getTimerStatus = (timer: BossTimerEntry): TimerStatus => {
     const timeElapsed = Date.now() - timer.killTime;
     const alert90Time = 90 * 60 * 1000;
-    const alert120Time = 120 * 60 * 1000;
 
     if (hasRespawned(timer.killTime)) {
       return 'respawned';

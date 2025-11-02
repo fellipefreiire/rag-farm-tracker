@@ -5,7 +5,6 @@ import { hashPassword, validateRoomName, validatePassword, validateDisplayName }
 import { getRandomUserColor } from '../utils/colors';
 
 const ROOM_STORAGE_KEY = 'currentRoom';
-const MEMBER_STORAGE_KEY = 'currentMember';
 
 interface StoredRoomData {
   roomId: string;
@@ -25,7 +24,7 @@ export function useRoom() {
     error: null,
   });
 
-  const [heartbeatInterval, setHeartbeatInterval] = useState<NodeJS.Timeout | null>(null);
+  const [heartbeatInterval, setHeartbeatInterval] = useState<number | null>(null);
 
   // Heartbeat to update last_seen
   const startHeartbeat = useCallback((memberId: string) => {
@@ -365,10 +364,10 @@ export function useRoom() {
         },
         async () => {
           // Refetch members
-          const { data: members } = await supabase
+          const { data: members } = await supabase!
             .from('room_members')
             .select()
-            .eq('room_id', state.room.id);
+            .eq('room_id', state.room!.id);
 
           if (members) {
             setState(prev => ({ ...prev, members }));
@@ -378,7 +377,7 @@ export function useRoom() {
       .subscribe();
 
     return () => {
-      supabase.removeChannel(channel);
+      supabase!.removeChannel(channel);
     };
   }, [state.room]);
 

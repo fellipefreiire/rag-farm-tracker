@@ -1,4 +1,4 @@
-import { Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { OptimizerProvider } from './features/optimizer/context/OptimizerContext';
 import { Home } from './components/Home';
 import { Planner } from './components/Planner';
@@ -11,7 +11,6 @@ import { SharedBossTimeTracker } from './components/SharedBossTimeTracker';
 import { getRoomIdFromUrl } from './utils/room';
 
 function BossTrackerRoute() {
-  const location = useLocation();
   const roomId = getRoomIdFromUrl();
 
   // If room ID exists in URL, show shared version

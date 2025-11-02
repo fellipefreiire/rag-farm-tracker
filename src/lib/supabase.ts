@@ -15,7 +15,7 @@ const isValidUrl = (url: string): boolean => {
 };
 
 const isValidKey = (key: string): boolean => {
-  return key && key !== 'your_supabase_anon_key' && key.length > 20;
+  return Boolean(key && key !== 'your_supabase_anon_key' && key.length > 20);
 };
 
 const hasValidCredentials = isValidUrl(supabaseUrl) && isValidKey(supabaseAnonKey);

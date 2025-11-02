@@ -22,7 +22,7 @@ export function useRealtimeTimers({ roomId, member }: UseRealtimeTimersProps) {
     const fetchTimers = async () => {
       setIsLoading(true);
       try {
-        const { data, error } = await supabase
+        const { data, error } = await supabase!
           .from('boss_timers')
           .select()
           .eq('room_id', roomId)
@@ -89,7 +89,7 @@ export function useRealtimeTimers({ roomId, member }: UseRealtimeTimersProps) {
       .subscribe();
 
     return () => {
-      supabase.removeChannel(channel);
+      supabase!.removeChannel(channel);
     };
   }, [roomId]);
 
@@ -118,7 +118,7 @@ export function useRealtimeTimers({ roomId, member }: UseRealtimeTimersProps) {
 
         // Update in database
         if (updated) {
-          await supabase
+          await supabase!
             .from('boss_timers')
             .update(updates)
             .eq('id', timer.id);
