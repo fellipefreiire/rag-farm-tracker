@@ -170,7 +170,10 @@ export function useRoom() {
   // Create a new room
   const createRoom = useCallback(async (data: CreateRoomData) => {
     if (!supabase) {
-      setState(prev => ({ ...prev, error: 'Supabase não configurado' }));
+      setState(prev => ({
+        ...prev,
+        error: 'Supabase não configurado. Para usar salas compartilhadas, configure as variáveis de ambiente VITE_SUPABASE_URL e VITE_SUPABASE_ANON_KEY. Veja o README.md para instruções.'
+      }));
       return { success: false, roomId: null };
     }
 
@@ -243,7 +246,10 @@ export function useRoom() {
   // Join existing room
   const joinRoom = useCallback(async (data: JoinRoomData) => {
     if (!supabase) {
-      setState(prev => ({ ...prev, error: 'Supabase não configurado' }));
+      setState(prev => ({
+        ...prev,
+        error: 'Supabase não configurado. Para usar salas compartilhadas, configure as variáveis de ambiente VITE_SUPABASE_URL e VITE_SUPABASE_ANON_KEY. Veja o README.md para instruções.'
+      }));
       return { success: false };
     }
 

@@ -16,6 +16,7 @@ Web app para rastrear sessões de farm em Ragnarok Online, calcular lucros e ana
 
 - Node.js 18+ instalado
 - npm ou yarn
+- (Opcional) Conta no Supabase para usar Salas Compartilhadas
 
 ## Instalação
 
@@ -31,6 +32,10 @@ npm install
 ```bash
 npm run process-data
 ```
+
+4. **(Opcional)** Para habilitar Salas Compartilhadas no Boss Time Tracker:
+   - Siga as instruções em [SUPABASE_SETUP.md](./SUPABASE_SETUP.md)
+   - Configure as variáveis de ambiente (veja seção abaixo)
 
 ## Como Usar
 
@@ -55,6 +60,50 @@ Os arquivos otimizados estarão na pasta `dist/`
 ```bash
 npm run preview
 ```
+
+## Deploy na Vercel
+
+### Configuração de Variáveis de Ambiente
+
+Para usar o Boss Time Tracker com Salas Compartilhadas em produção (Vercel), você precisa configurar as variáveis de ambiente:
+
+1. **No seu projeto Vercel:**
+   - Acesse o dashboard da Vercel
+   - Vá para **Settings** > **Environment Variables**
+
+2. **Adicione as seguintes variáveis:**
+   ```
+   VITE_SUPABASE_URL=https://seu-projeto.supabase.co
+   VITE_SUPABASE_ANON_KEY=sua-chave-anon-aqui
+   ```
+
+3. **Como obter os valores:**
+   - Acesse seu projeto no [Supabase Dashboard](https://app.supabase.com)
+   - Vá em **Settings** > **API**
+   - Copie o **Project URL** e a chave **anon public**
+
+4. **Salve e faça redeploy:**
+   - Clique em **Save**
+   - Faça um novo deploy ou use **Deployments** > **Redeploy**
+
+### Verificar se está funcionando
+
+Após o deploy com as variáveis configuradas:
+
+1. Acesse seu site em produção
+2. Vá para `/boss-tracker`
+3. O botão **"🚪 Criar/Entrar Sala"** deve aparecer no canto superior direito
+4. Se não aparecer, verifique:
+   - Console do navegador (F12) para erros
+   - Se as variáveis de ambiente estão corretas na Vercel
+   - Se você fez o redeploy após adicionar as variáveis
+
+### Modo Solo (Sem Supabase)
+
+O app funciona perfeitamente **sem** configurar o Supabase:
+- O Boss Time Tracker funcionará em modo local (dados salvos no navegador)
+- O botão de criar sala simplesmente não aparecerá
+- Todas as outras funcionalidades continuam funcionando normalmente
 
 ## Fluxo de Uso
 
