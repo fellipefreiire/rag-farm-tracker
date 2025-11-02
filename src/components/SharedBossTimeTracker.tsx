@@ -34,7 +34,7 @@ export function SharedBossTimeTracker() {
   const { room, member, members, isConnected, isLoading: roomLoading, error: roomError, createRoom, joinRoom, leaveRoom } = useRoom();
 
   // Timers hook
-  const { timers, addTimer, removeTimer } = useRealtimeTimers({
+  const { timers, addTimer } = useRealtimeTimers({
     roomId: room?.id || null,
     member,
   });
