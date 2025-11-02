@@ -83,7 +83,12 @@ export function useRealtimeTimers({ roomId, member }: UseRealtimeTimersProps) {
           filter: `room_id=eq.${roomId}`,
         },
         (payload) => {
-          setTimers(prev => prev.filter(t => t.id !== payload.old.id));
+          console.log('DELETE event received:', payload.old);
+          setTimers(prev => {
+            const filtered = prev.filter(t => t.id !== payload.old.id);
+            console.log('Timers before delete:', prev.length, 'after:', filtered.length);
+            return filtered;
+          });
         }
       )
       .subscribe();
@@ -237,10 +242,20 @@ export function useRealtimeTimers({ roomId, member }: UseRealtimeTimersProps) {
   // Remove timer
   const removeTimer = useCallback(
     async (timerId: string) => {
-      if (!supabase) return false;
+      if (!supabase) {
+        console.log('removeTimer: No supabase client');
+        return false;
+      }
 
       try {
-        const { error } = await supabase.from('boss_timers').delete().eq('id', timerId);
+        console.log('removeTimer: Attempting to delete timer:', timerId);
+        const { data, error } = await supabase
+          .from('boss_timers')
+          .delete()
+          .eq('id', timerId)
+          .select();
+
+        console.log('removeTimer: Delete result:', { data, error });
 
         if (error) throw error;
 
