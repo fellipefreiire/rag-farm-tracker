@@ -78,3 +78,28 @@ export interface Session {
 export interface SessionHistory {
   sessions: Session[];
 }
+
+// Boss Time Tracker Types
+export interface Boss extends Mob {
+  isMVP: boolean;
+  isMini: boolean;
+  respawnTime: number; // in minutes
+  mapLocation?: string;
+}
+
+export type TimerStatus = 'active' | 'warning' | 'respawned';
+
+export interface BossTimerEntry {
+  id: string;
+  bossId: number;
+  bossName: string;
+  killTime: number; // timestamp in milliseconds
+  killTimeUTC: string; // formatted UTC time (HH:MM)
+  killTimeLocal: string; // formatted local time (HH:MM)
+  respawnMinutes: number; // respawn time in minutes (default 180)
+  nextSpawnTime: number; // calculated timestamp for 120 minutes
+  playerName?: string;
+  alert90Played: boolean; // tracks if 90min alert has been played
+  alert120Played: boolean; // tracks if 120min alert has been played
+  createdAt: number; // timestamp when entry was created
+}

@@ -84,8 +84,26 @@ export function Home() {
           </div>
         </div>
 
-        {/* Second Row - 2 columns centered */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+        {/* Second Row - 3 columns */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Boss Time Tracker Card */}
+          <div
+            onClick={() => navigate('/boss-tracker')}
+            className="bg-gradient-to-br from-red-900/40 to-red-800/40 backdrop-blur-sm rounded-2xl border border-red-500/30 shadow-2xl hover:shadow-red-500/20 transition-all duration-300 hover:scale-105 cursor-pointer"
+          >
+            <div className="p-8">
+              {/* Icon */}
+              <div className="w-16 h-16 bg-red-500/20 rounded-xl flex items-center justify-center mb-6">
+                <span className="text-4xl">⏱️</span>
+              </div>
+
+              {/* Title */}
+              <h2 className="text-3xl font-bold text-white">
+                Boss Time Tracker
+              </h2>
+            </div>
+          </div>
+
           {/* Formulas Card */}
           <div
             onClick={() => navigate('/formulas')}
