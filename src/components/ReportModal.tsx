@@ -52,10 +52,10 @@ export function ReportModal({ report, onClose, onExportCSV, onCopyToClipboard }:
   const rankingData = [...chartData].sort((a, b) => b.profitPerHour - a.profitPerHour);
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
-      <div className="bg-white rounded-2xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-hidden flex flex-col report-modal-content">
+    <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 p-4">
+      <div className="bg-gray-800 rounded-2xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-hidden flex flex-col report-modal-content border border-green-500/30">
         {/* Header */}
-        <div className="bg-gradient-to-r from-green-500 to-green-600 p-6 text-white">
+        <div className="bg-gradient-to-r from-green-600 to-green-700 p-6 text-white">
           <div className="flex items-center justify-between">
             <div>
               <h2 className="text-3xl font-bold mb-2">Relatório de Farm</h2>
@@ -71,18 +71,18 @@ export function ReportModal({ report, onClose, onExportCSV, onCopyToClipboard }:
         </div>
 
         {/* Content */}
-        <div className="p-6 overflow-y-auto flex-1">
+        <div className="p-6 overflow-y-auto flex-1 bg-gray-800">
           {/* Summary Stats */}
           <div className="grid grid-cols-2 gap-4 mb-6">
-            <div className="bg-green-50 rounded-xl p-4 border border-green-200">
-              <div className="text-sm text-green-700 mb-1">Lucro Total</div>
-              <div className="text-3xl font-bold text-green-900">
+            <div className="bg-green-900/30 rounded-xl p-4 border border-green-500/30">
+              <div className="text-sm text-green-400 mb-1">Lucro Total</div>
+              <div className="text-3xl font-bold text-green-300">
                 {report.totalProfit.toLocaleString()}z
               </div>
             </div>
-            <div className="bg-blue-50 rounded-xl p-4 border border-blue-200">
-              <div className="text-sm text-blue-700 mb-1">Lucro por Hora</div>
-              <div className="text-3xl font-bold text-blue-900">
+            <div className="bg-green-900/30 rounded-xl p-4 border border-green-500/30">
+              <div className="text-sm text-green-400 mb-1">Lucro por Hora</div>
+              <div className="text-3xl font-bold text-green-300">
                 {report.totalProfitPerHour.toLocaleString(undefined, { maximumFractionDigits: 0 })}z/h
               </div>
             </div>
@@ -90,17 +90,17 @@ export function ReportModal({ report, onClose, onExportCSV, onCopyToClipboard }:
 
           {/* Most Profitable Item */}
           {report.mostProfitableItem && (
-            <div className="bg-yellow-50 rounded-xl p-4 border border-yellow-200 mb-6">
-              <div className="text-sm text-yellow-700 mb-1">Item Mais Lucrativo</div>
+            <div className="bg-yellow-900/30 rounded-xl p-4 border border-yellow-500/30 mb-6">
+              <div className="text-sm text-yellow-400 mb-1">Item Mais Lucrativo</div>
               <div className="flex items-center justify-between">
-                <div className="text-xl font-bold text-yellow-900">
+                <div className="text-xl font-bold text-yellow-300">
                   {report.mostProfitableItem.itemName}
                 </div>
                 <div className="text-right">
-                  <div className="text-lg font-semibold text-yellow-900">
+                  <div className="text-lg font-semibold text-yellow-300">
                     {report.mostProfitableItem.totalProfit.toLocaleString()}z
                   </div>
-                  <div className="text-sm text-yellow-700">
+                  <div className="text-sm text-yellow-400">
                     {report.mostProfitableItem.percentOfTotal.toFixed(1)}% do lucro total
                   </div>
                 </div>
@@ -110,10 +110,10 @@ export function ReportModal({ report, onClose, onExportCSV, onCopyToClipboard }:
 
           {/* Selected Mobs */}
           <div className="mb-6">
-            <h3 className="text-lg font-bold text-gray-800 mb-3">Mobs Caçados</h3>
+            <h3 className="text-lg font-bold text-white mb-3">Mobs Caçados</h3>
             <div className="flex flex-wrap gap-2">
               {report.selectedMobs.map(mob => (
-                <span key={mob.id} className="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm font-semibold">
+                <span key={mob.id} className="px-3 py-1 bg-green-500/20 text-green-300 rounded-full text-sm font-semibold">
                   {mob.name}
                 </span>
               ))}
@@ -121,14 +121,14 @@ export function ReportModal({ report, onClose, onExportCSV, onCopyToClipboard }:
           </div>
 
           {/* Tabs */}
-          <div className="mb-4 border-b border-gray-200">
+          <div className="mb-4 border-b border-gray-700">
             <div className="flex gap-2">
               <button
                 onClick={() => setActiveTab('table')}
                 className={`px-4 py-2 font-semibold text-sm transition-colors border-b-2 ${
                   activeTab === 'table'
-                    ? 'border-green-500 text-green-600'
-                    : 'border-transparent text-gray-500 hover:text-gray-700'
+                    ? 'border-green-500 text-green-400'
+                    : 'border-transparent text-gray-400 hover:text-gray-300'
                 }`}
               >
                 📊 Análise por Item
@@ -137,8 +137,8 @@ export function ReportModal({ report, onClose, onExportCSV, onCopyToClipboard }:
                 onClick={() => setActiveTab('charts')}
                 className={`px-4 py-2 font-semibold text-sm transition-colors border-b-2 ${
                   activeTab === 'charts'
-                    ? 'border-green-500 text-green-600'
-                    : 'border-transparent text-gray-500 hover:text-gray-700'
+                    ? 'border-green-500 text-green-400'
+                    : 'border-transparent text-gray-400 hover:text-gray-300'
                 }`}
               >
                 📈 Gráficos
@@ -150,39 +150,39 @@ export function ReportModal({ report, onClose, onExportCSV, onCopyToClipboard }:
           {activeTab === 'table' ? (
             /* Item Analysis Table */
             <div className="mb-4">
-            <h3 className="text-lg font-bold text-gray-800 mb-3">Análise por Item</h3>
-            <div className="border-2 border-gray-200 rounded-xl overflow-hidden">
+            <h3 className="text-lg font-bold text-white mb-3">Análise por Item</h3>
+            <div className="border-2 border-gray-700 rounded-xl overflow-hidden">
               <table className="w-full">
-                <thead className="bg-gray-100">
+                <thead className="bg-gray-900">
                   <tr>
-                    <th className="text-left py-3 px-4 font-semibold text-gray-700 text-sm">Item</th>
-                    <th className="text-right py-3 px-4 font-semibold text-gray-700 text-sm">Qtd</th>
-                    <th className="text-right py-3 px-4 font-semibold text-gray-700 text-sm">Preço Unit.</th>
-                    <th className="text-right py-3 px-4 font-semibold text-gray-700 text-sm">Lucro Total</th>
-                    <th className="text-right py-3 px-4 font-semibold text-gray-700 text-sm">Lucro/Hora</th>
-                    <th className="text-right py-3 px-4 font-semibold text-gray-700 text-sm">% do Total</th>
-                    <th className="text-right py-3 px-4 font-semibold text-gray-700 text-sm">Drop Rate</th>
+                    <th className="text-left py-3 px-4 font-semibold text-green-300 text-sm">Item</th>
+                    <th className="text-right py-3 px-4 font-semibold text-green-300 text-sm">Qtd</th>
+                    <th className="text-right py-3 px-4 font-semibold text-green-300 text-sm">Preço Unit.</th>
+                    <th className="text-right py-3 px-4 font-semibold text-green-300 text-sm">Lucro Total</th>
+                    <th className="text-right py-3 px-4 font-semibold text-green-300 text-sm">Lucro/Hora</th>
+                    <th className="text-right py-3 px-4 font-semibold text-green-300 text-sm">% do Total</th>
+                    <th className="text-right py-3 px-4 font-semibold text-green-300 text-sm">Drop Rate</th>
                   </tr>
                 </thead>
                 <tbody>
                   {report.itemAnalysis.map((item, idx) => (
-                    <tr key={idx} className="border-t border-gray-200 hover:bg-gray-50">
-                      <td className="py-3 px-4 font-medium text-gray-900 text-sm">
+                    <tr key={idx} className="border-t border-gray-700 hover:bg-gray-700/50">
+                      <td className="py-3 px-4 font-medium text-white text-sm">
                         {item.itemName}
                         {item.isCustomPrice && (
-                          <span className="ml-2 text-xs bg-purple-100 text-purple-700 px-2 py-0.5 rounded-full">
+                          <span className="ml-2 text-xs bg-purple-500/20 text-purple-300 px-2 py-0.5 rounded-full">
                             Custom
                           </span>
                         )}
                       </td>
-                      <td className="py-3 px-4 text-right text-gray-700 text-sm">{item.quantity}</td>
-                      <td className="py-3 px-4 text-right text-gray-700 text-sm">{item.unitPrice.toLocaleString()}z</td>
-                      <td className="py-3 px-4 text-right font-bold text-green-700 text-sm">{item.totalProfit.toLocaleString()}z</td>
-                      <td className="py-3 px-4 text-right text-blue-700 text-sm">
+                      <td className="py-3 px-4 text-right text-gray-300 text-sm">{item.quantity}</td>
+                      <td className="py-3 px-4 text-right text-gray-300 text-sm">{item.unitPrice.toLocaleString()}z</td>
+                      <td className="py-3 px-4 text-right font-bold text-green-400 text-sm">{item.totalProfit.toLocaleString()}z</td>
+                      <td className="py-3 px-4 text-right text-green-300 text-sm">
                         {item.profitPerHour.toLocaleString(undefined, { maximumFractionDigits: 0 })}z/h
                       </td>
-                      <td className="py-3 px-4 text-right text-gray-700 text-sm font-semibold">{item.percentOfTotal.toFixed(1)}%</td>
-                      <td className="py-3 px-4 text-right text-gray-500 text-sm">{item.dropRate.toFixed(2)}%</td>
+                      <td className="py-3 px-4 text-right text-gray-300 text-sm font-semibold">{item.percentOfTotal.toFixed(1)}%</td>
+                      <td className="py-3 px-4 text-right text-gray-400 text-sm">{item.dropRate.toFixed(2)}%</td>
                     </tr>
                   ))}
                 </tbody>
@@ -199,7 +199,7 @@ export function ReportModal({ report, onClose, onExportCSV, onCopyToClipboard }:
                   className={`px-4 py-2 rounded-lg font-semibold text-sm transition-colors ${
                     chartType === 'pie'
                       ? 'bg-green-500 text-white'
-                      : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                      : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
                   }`}
                 >
                   🥧 Pizza
@@ -209,7 +209,7 @@ export function ReportModal({ report, onClose, onExportCSV, onCopyToClipboard }:
                   className={`px-4 py-2 rounded-lg font-semibold text-sm transition-colors ${
                     chartType === 'bar'
                       ? 'bg-green-500 text-white'
-                      : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                      : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
                   }`}
                 >
                   📊 Barras
@@ -219,7 +219,7 @@ export function ReportModal({ report, onClose, onExportCSV, onCopyToClipboard }:
                   className={`px-4 py-2 rounded-lg font-semibold text-sm transition-colors ${
                     chartType === 'barH'
                       ? 'bg-green-500 text-white'
-                      : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                      : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
                   }`}
                 >
                   📈 Ranking Lucro/Hora
@@ -227,10 +227,10 @@ export function ReportModal({ report, onClose, onExportCSV, onCopyToClipboard }:
               </div>
 
               {/* Chart Container */}
-              <div className="bg-gray-50 rounded-xl p-6 border-2 border-gray-200">
+              <div className="bg-gray-900/50 rounded-xl p-6 border-2 border-gray-700">
                 {chartType === 'pie' && (
                   <div>
-                    <h3 className="text-center font-bold text-gray-800 mb-4">Distribuição de Lucro por Item</h3>
+                    <h3 className="text-center font-bold text-white mb-4">Distribuição de Lucro por Item</h3>
                     <ResponsiveContainer width="100%" height={400}>
                       <PieChart>
                         <Pie
@@ -249,7 +249,7 @@ export function ReportModal({ report, onClose, onExportCSV, onCopyToClipboard }:
                         </Pie>
                         <Tooltip
                           formatter={(value: number) => `${value.toLocaleString()}z`}
-                          contentStyle={{ backgroundColor: 'white', border: '1px solid #ccc', borderRadius: '8px' }}
+                          contentStyle={{ backgroundColor: '#1f2937', border: '1px solid #374151', borderRadius: '8px', color: '#fff' }}
                         />
                         <Legend />
                       </PieChart>
@@ -259,15 +259,15 @@ export function ReportModal({ report, onClose, onExportCSV, onCopyToClipboard }:
 
                 {chartType === 'bar' && (
                   <div>
-                    <h3 className="text-center font-bold text-gray-800 mb-4">Lucro Total por Item</h3>
+                    <h3 className="text-center font-bold text-white mb-4">Lucro Total por Item</h3>
                     <ResponsiveContainer width="100%" height={400}>
                       <BarChart data={chartData}>
-                        <CartesianGrid strokeDasharray="3 3" />
-                        <XAxis dataKey="name" angle={-45} textAnchor="end" height={100} />
-                        <YAxis />
+                        <CartesianGrid strokeDasharray="3 3" stroke="#374151" />
+                        <XAxis dataKey="name" angle={-45} textAnchor="end" height={100} stroke="#9ca3af" />
+                        <YAxis stroke="#9ca3af" />
                         <Tooltip
                           formatter={(value: number) => `${value.toLocaleString()}z`}
-                          contentStyle={{ backgroundColor: 'white', border: '1px solid #ccc', borderRadius: '8px' }}
+                          contentStyle={{ backgroundColor: '#1f2937', border: '1px solid #374151', borderRadius: '8px', color: '#fff' }}
                         />
                         <Legend />
                         <Bar dataKey="value" fill="#10b981" name="Lucro Total" />
@@ -278,15 +278,15 @@ export function ReportModal({ report, onClose, onExportCSV, onCopyToClipboard }:
 
                 {chartType === 'barH' && (
                   <div>
-                    <h3 className="text-center font-bold text-gray-800 mb-4">Ranking de Lucro por Hora</h3>
+                    <h3 className="text-center font-bold text-white mb-4">Ranking de Lucro por Hora</h3>
                     <ResponsiveContainer width="100%" height={400}>
                       <BarChart data={rankingData} layout="vertical">
-                        <CartesianGrid strokeDasharray="3 3" />
-                        <XAxis type="number" />
-                        <YAxis dataKey="name" type="category" width={150} />
+                        <CartesianGrid strokeDasharray="3 3" stroke="#374151" />
+                        <XAxis type="number" stroke="#9ca3af" />
+                        <YAxis dataKey="name" type="category" width={150} stroke="#9ca3af" />
                         <Tooltip
                           formatter={(value: number) => `${value.toLocaleString()}z/h`}
-                          contentStyle={{ backgroundColor: 'white', border: '1px solid #ccc', borderRadius: '8px' }}
+                          contentStyle={{ backgroundColor: '#1f2937', border: '1px solid #374151', borderRadius: '8px', color: '#fff' }}
                         />
                         <Legend />
                         <Bar dataKey="profitPerHour" fill="#3b82f6" name="Lucro/Hora" />
@@ -300,8 +300,8 @@ export function ReportModal({ report, onClose, onExportCSV, onCopyToClipboard }:
         </div>
 
         {/* Footer Actions */}
-        <div className="bg-gray-50 px-6 py-4 border-t border-gray-200 flex items-center justify-between">
-          <div className="text-sm text-gray-600">
+        <div className="bg-gray-900 px-6 py-4 border-t border-gray-700 flex items-center justify-between">
+          <div className="text-sm text-gray-400">
             {report.itemAnalysis.length} item(s) coletado(s)
           </div>
           <div className="flex gap-3">

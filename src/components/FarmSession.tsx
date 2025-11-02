@@ -171,25 +171,25 @@ export function FarmSession({
   const { totalProfit, profitPerHour, elapsed } = calculateProfit();
 
   return (
-    <div className="h-screen max-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-4 flex flex-col overflow-hidden">
+    <div className="h-screen max-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 py-4 flex flex-col overflow-hidden">
       <div className="max-w-7xl mx-auto px-16 flex-1 flex flex-col min-h-0">
         {/* Header */}
         <header className="mb-4 text-center">
-          <h1 className="text-3xl font-bold text-gray-900">
+          <h1 className="text-3xl font-bold text-white">
             Sessão de Farm
           </h1>
         </header>
 
         <div className="grid grid-cols-3 gap-6 mb-4">
           {/* Timer Card */}
-          <div className="col-span-2 bg-white rounded-2xl shadow-xl p-4 border border-gray-100">
+          <div className="col-span-2 bg-gray-800/50 rounded-2xl shadow-xl p-4 border border-green-500/30">
             <div className="text-center mb-3">
-              <div className="text-4xl font-bold text-blue-600 font-mono mb-3">
+              <div className="text-4xl font-bold text-green-400 font-mono mb-3">
                 {formatTime(getElapsedTime())}
               </div>
               <div className="flex items-center justify-center gap-2 flex-wrap mb-3">
                 {selectedMobIds.map(mobId => (
-                  <span key={mobId} className="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-semibold">
+                  <span key={mobId} className="px-2 py-1 bg-green-500/20 text-green-300 rounded-full text-xs font-semibold">
                     {mobs[mobId].name}
                   </span>
                 ))}
@@ -223,7 +223,7 @@ export function FarmSession({
                   <>
                     <button
                       onClick={onResumeTimer}
-                      className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg transition-colors text-sm"
+                      className="px-4 py-2 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-lg transition-colors text-sm"
                     >
                       ▶ Retomar
                     </button>
@@ -239,11 +239,11 @@ export function FarmSession({
             </div>
 
             {/* Back Button and Report Button */}
-            <div className="mt-3 pt-3 border-t border-gray-200 space-y-2">
+            <div className="mt-3 pt-3 border-t border-gray-700 space-y-2">
               {timerStatus === 'finished' && (
                 <button
                   onClick={onShowReport}
-                  className="w-full py-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg transition-colors text-sm"
+                  className="w-full py-2 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-lg transition-colors text-sm"
                 >
                   📊 Visualizar Relatório
                 </button>
@@ -251,7 +251,7 @@ export function FarmSession({
               <button
                 onClick={onBack}
                 disabled={timerStatus === 'running'}
-                className="w-full py-2 bg-gray-500 hover:bg-gray-600 text-white font-semibold rounded-lg transition-colors text-sm disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full py-2 bg-gray-700 hover:bg-gray-600 text-white font-semibold rounded-lg transition-colors text-sm disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 ← Voltar para Seleção
               </button>
@@ -259,23 +259,23 @@ export function FarmSession({
           </div>
 
           {/* Summary Card */}
-          <div className="bg-white rounded-2xl shadow-xl p-4 border border-gray-100">
-            <h3 className="text-base font-bold text-gray-800 mb-3">Resumo</h3>
+          <div className="bg-gray-800/50 rounded-2xl shadow-xl p-4 border border-green-500/30">
+            <h3 className="text-base font-bold text-white mb-3">Resumo</h3>
             <div className="space-y-2">
-              <div className="bg-green-50 rounded-lg p-2">
-                <div className="text-xs text-green-700">Lucro Total</div>
-                <div className="text-xl font-bold text-green-900">
+              <div className="bg-green-900/30 rounded-lg p-2 border border-green-500/20">
+                <div className="text-xs text-green-400">Lucro Total</div>
+                <div className="text-xl font-bold text-green-300">
                   {totalProfit.toLocaleString()}z
                 </div>
               </div>
-              <div className="bg-blue-50 rounded-lg p-2">
-                <div className="text-xs text-blue-700">Lucro/Hora</div>
-                <div className="text-xl font-bold text-blue-900">
+              <div className="bg-green-900/30 rounded-lg p-2 border border-green-500/20">
+                <div className="text-xs text-green-400">Lucro/Hora</div>
+                <div className="text-xl font-bold text-green-300">
                   {profitPerHour.toLocaleString(undefined, { maximumFractionDigits: 0 })}z/h
                 </div>
               </div>
               {elapsed < 3600000 && elapsed > 0 && (
-                <div className="text-xs text-gray-500 italic">
+                <div className="text-xs text-gray-400 italic">
                   * Projeção
                 </div>
               )}
@@ -284,45 +284,45 @@ export function FarmSession({
         </div>
 
         {/* Drops Table */}
-        <div className="bg-white rounded-2xl shadow-xl p-4 border border-gray-100 flex-1 flex flex-col min-h-0">
-          <h3 className="text-lg font-bold text-gray-800 mb-3">Tracking de Drops</h3>
+        <div className="bg-gray-800/50 rounded-2xl shadow-xl p-4 border border-green-500/30 flex-1 flex flex-col min-h-0">
+          <h3 className="text-lg font-bold text-white mb-3">Tracking de Drops</h3>
           <div className="overflow-auto flex-1">
             <table className="w-full">
-              <thead className="sticky top-0 bg-white">
-                <tr className="border-b-2 border-gray-200">
+              <thead className="sticky top-0 bg-gray-800">
+                <tr className="border-b-2 border-gray-700">
                   <th
                     onClick={() => handleSort('item')}
-                    className="text-left py-2 px-3 font-semibold text-gray-700 text-sm cursor-pointer hover:bg-gray-100 select-none"
+                    className="text-left py-2 px-3 font-semibold text-green-300 text-sm cursor-pointer hover:bg-gray-700 select-none"
                   >
                     Item {sortColumn === 'item' && (sortDirection === 'asc' ? '▲' : '▼')}
                   </th>
                   <th
                     onClick={() => handleSort('dropRate')}
-                    className="text-right py-2 px-3 font-semibold text-gray-700 text-sm cursor-pointer hover:bg-gray-100 select-none"
+                    className="text-right py-2 px-3 font-semibold text-green-300 text-sm cursor-pointer hover:bg-gray-700 select-none"
                   >
                     Drop % {sortColumn === 'dropRate' && (sortDirection === 'asc' ? '▲' : '▼')}
                   </th>
                   <th
                     onClick={() => handleSort('npc')}
-                    className="text-right py-2 px-3 font-semibold text-gray-700 text-sm cursor-pointer hover:bg-gray-100 select-none"
+                    className="text-right py-2 px-3 font-semibold text-green-300 text-sm cursor-pointer hover:bg-gray-700 select-none"
                   >
                     Valor NPC {sortColumn === 'npc' && (sortDirection === 'asc' ? '▲' : '▼')}
                   </th>
                   <th
                     onClick={() => handleSort('custom')}
-                    className="text-right py-2 px-3 font-semibold text-gray-700 text-sm cursor-pointer hover:bg-gray-100 select-none"
+                    className="text-right py-2 px-3 font-semibold text-green-300 text-sm cursor-pointer hover:bg-gray-700 select-none"
                   >
                     Valor Custom {sortColumn === 'custom' && (sortDirection === 'asc' ? '▲' : '▼')}
                   </th>
                   <th
                     onClick={() => handleSort('quantity')}
-                    className="text-right py-2 px-3 font-semibold text-gray-700 text-sm cursor-pointer hover:bg-gray-100 select-none"
+                    className="text-right py-2 px-3 font-semibold text-green-300 text-sm cursor-pointer hover:bg-gray-700 select-none"
                   >
                     Quantidade {sortColumn === 'quantity' && (sortDirection === 'asc' ? '▲' : '▼')}
                   </th>
                   <th
                     onClick={() => handleSort('total')}
-                    className="text-right py-2 px-3 font-semibold text-gray-700 text-sm cursor-pointer hover:bg-gray-100 select-none"
+                    className="text-right py-2 px-3 font-semibold text-green-300 text-sm cursor-pointer hover:bg-gray-700 select-none"
                   >
                     Total {sortColumn === 'total' && (sortDirection === 'asc' ? '▲' : '▼')}
                   </th>
@@ -338,10 +338,10 @@ export function FarmSession({
                   const total = quantity * value;
 
                   return (
-                    <tr key={drop.itemId} className="border-b border-gray-100 hover:bg-gray-50">
-                      <td className="py-2 px-3 font-medium text-gray-900 text-sm">{drop.eName}</td>
-                      <td className="py-2 px-3 text-right text-gray-600 text-sm">{drop.rate.toFixed(2)}%</td>
-                      <td className="py-2 px-3 text-right text-gray-600 text-sm">{npcValue.toLocaleString()}z</td>
+                    <tr key={drop.itemId} className="border-b border-gray-700 hover:bg-gray-700/50">
+                      <td className="py-2 px-3 font-medium text-white text-sm">{drop.eName}</td>
+                      <td className="py-2 px-3 text-right text-gray-300 text-sm">{drop.rate.toFixed(2)}%</td>
+                      <td className="py-2 px-3 text-right text-gray-300 text-sm">{npcValue.toLocaleString()}z</td>
                       <td className="py-2 px-3 text-right">
                         <input
                           type="number"
@@ -349,7 +349,7 @@ export function FarmSession({
                           placeholder={npcValue.toString()}
                           value={customValue ?? ''}
                           onChange={(e) => onUpdateCustomPrice(drop.itemId, e.target.value ? parseInt(e.target.value) : undefined)}
-                          className="w-20 px-2 py-1 border border-gray-300 rounded text-right text-sm focus:ring-1 focus:ring-blue-400 focus:border-blue-400"
+                          className="w-20 px-2 py-1 bg-gray-700 border border-gray-600 rounded text-right text-sm text-white placeholder-gray-400 focus:ring-1 focus:ring-green-400 focus:border-green-400"
                         />
                       </td>
                       <td className="py-2 px-3 text-right">
@@ -358,10 +358,10 @@ export function FarmSession({
                           min="0"
                           value={quantity}
                           onChange={(e) => onUpdateQuantity(drop.itemId, parseInt(e.target.value) || 0)}
-                          className="w-16 px-2 py-1 border border-gray-300 rounded text-right text-sm focus:ring-1 focus:ring-blue-400 focus:border-blue-400"
+                          className="w-16 px-2 py-1 bg-gray-700 border border-gray-600 rounded text-right text-sm text-white focus:ring-1 focus:ring-green-400 focus:border-green-400"
                         />
                       </td>
-                      <td className="py-2 px-3 text-right font-bold text-gray-900 text-sm">{total.toLocaleString()}z</td>
+                      <td className="py-2 px-3 text-right font-bold text-green-300 text-sm">{total.toLocaleString()}z</td>
                     </tr>
                   );
                 })}
