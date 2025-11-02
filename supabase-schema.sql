@@ -38,7 +38,9 @@ CREATE TABLE IF NOT EXISTS boss_timers (
   added_by_color TEXT NOT NULL,
   alert_90_played BOOLEAN DEFAULT false,
   alert_120_played BOOLEAN DEFAULT false,
-  created_at TIMESTAMP WITH TIME ZONE DEFAULT now()
+  created_at TIMESTAMP WITH TIME ZONE DEFAULT now(),
+  -- Ensure only one timer per boss per room
+  UNIQUE(room_id, boss_id)
 );
 
 -- Create indexes for better query performance

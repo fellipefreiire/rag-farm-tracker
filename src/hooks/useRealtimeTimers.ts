@@ -197,7 +197,30 @@ export function useRealtimeTimers({ roomId, member }: UseRealtimeTimersProps) {
           alert_120_played: false,
         };
 
-        const { error } = await supabase.from('boss_timers').insert(newTimer);
+        // Check if timer already exists for this boss
+        const existingTimer = await supabase
+          .from('boss_timers')
+          .select('id')
+          .eq('room_id', roomId)
+          .eq('boss_id', boss.id)
+          .maybeSingle();
+
+        let error;
+
+        if (existingTimer.data) {
+          // Update existing timer
+          const result = await supabase
+            .from('boss_timers')
+            .update(newTimer)
+            .eq('id', existingTimer.data.id);
+          error = result.error;
+        } else {
+          // Insert new timer
+          const result = await supabase
+            .from('boss_timers')
+            .insert(newTimer);
+          error = result.error;
+        }
 
         if (error) throw error;
 

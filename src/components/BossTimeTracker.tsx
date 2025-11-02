@@ -28,6 +28,7 @@ export function BossTimeTracker() {
   const [selectedBoss, setSelectedBoss] = useState<Boss | null>(null);
   const [killTimeInput, setKillTimeInput] = useState<string>('');
   const [playerName, setPlayerName] = useState<string>('');
+  const [timerBeingReset, setTimerBeingReset] = useState<string | null>(null);
 
   // Get user's timezone offset in hours
   const userTimezoneOffset = new Date().getTimezoneOffset() / -60;
@@ -130,6 +131,7 @@ export function BossTimeTracker() {
     setSelectedBoss(null);
     setKillTimeInput('');
     setPlayerName('');
+    setTimerBeingReset(null);
   };
 
   const handleConfirmTimer = () => {
@@ -174,15 +176,27 @@ export function BossTimeTracker() {
         createdAt: Date.now(),
       };
 
-      setTimers(prev => [...prev, newTimer]);
+      // If resetting, remove the old timer first, then add new one
+      if (timerBeingReset) {
+        setTimers(prev => [...prev.filter(t => t.id !== timerBeingReset), newTimer]);
+      } else {
+        setTimers(prev => [...prev, newTimer]);
+      }
+
       closeModal();
     } catch (error) {
       alert('Formato de horário inválido. Use HH:MM (ex: 20:30)');
     }
   };
 
-  const handleRemoveTimer = (id: string) => {
-    setTimers(prev => prev.filter(t => t.id !== id));
+  const handleResetTimer = (timer: BossTimerEntry) => {
+    const boss = bosses.find(b => b.id === timer.bossId);
+    if (boss) {
+      // Store the timer ID that's being reset
+      setTimerBeingReset(timer.id);
+      // Open modal to register new kill time
+      openModal(boss);
+    }
   };
 
   const getTimerForBoss = (bossId: number): BossTimerEntry | undefined => {
@@ -407,11 +421,11 @@ export function BossTimeTracker() {
                               </span>
                             )}
 
-                            {/* Complete Button */}
+                            {/* Reset Button */}
                             <button
-                              onClick={() => handleRemoveTimer(timer.id)}
+                              onClick={() => handleResetTimer(timer)}
                               className="w-full px-2 py-1 bg-green-600/40 hover:bg-green-600/70 rounded text-xs transition-colors font-medium"
-                              title="Resetar timer"
+                              title="Resetar timer - registrar nova morte"
                             >
                               Reset
                             </button>

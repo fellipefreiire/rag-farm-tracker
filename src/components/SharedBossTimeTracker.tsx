@@ -106,6 +106,7 @@ export function SharedBossTimeTracker() {
       return;
     }
 
+    // Upsert will automatically replace any existing timer for this boss
     const success = await addTimer(selectedBoss, killTimeInput, playerName);
 
     if (success) {
@@ -115,12 +116,10 @@ export function SharedBossTimeTracker() {
     }
   };
 
-  const handleResetTimer = async (timer: SharedBossTimer) => {
+  const handleResetTimer = (timer: SharedBossTimer) => {
     const boss = bosses.find(b => b.id === timer.boss_id);
     if (boss) {
-      // Remove old timer first (wait for completion)
-      await removeTimer(timer.id);
-      // Open modal to add new timer with current time
+      // Simply open modal - upsert will replace the existing timer
       openBossModal(boss);
     }
   };
@@ -232,9 +231,10 @@ export function SharedBossTimeTracker() {
             members={members}
             currentTime={currentTime}
             userTimezoneOffset={userTimezoneOffset}
-            onLeaveRoom={() => {
-              leaveRoom();
-              navigate('/boss-tracker');
+            onLeaveRoom={async () => {
+              await leaveRoom();
+              // Force show room manager after leaving
+              setTimeout(() => setShowRoomManager(true), 100);
             }}
           />
         )}
@@ -416,7 +416,7 @@ export function SharedBossTimeTracker() {
                             <button
                               onClick={() => handleResetTimer(timer)}
                               className="w-full px-2 py-1 bg-green-600/40 hover:bg-green-600/70 rounded text-xs transition-colors font-medium"
-                              title="Resetar timer - adicionar nova morte"
+                              title="Resetar timer - registrar nova morte"
                             >
                               Reset
                             </button>
