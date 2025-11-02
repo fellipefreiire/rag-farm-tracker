@@ -199,8 +199,14 @@ export function BossTimeTracker() {
     }
   };
 
-  const handleRemoveTimer = (id: string) => {
-    setTimers(prev => prev.filter(t => t.id !== id));
+  const handleRemoveTimer = (timer: BossTimerEntry) => {
+    const confirmed = window.confirm(
+      `Tem certeza que deseja remover o timer de ${timer.bossName}?`
+    );
+
+    if (confirmed) {
+      setTimers(prev => prev.filter(t => t.id !== timer.id));
+    }
   };
 
   const getTimerForBoss = (bossId: number): BossTimerEntry | undefined => {
@@ -435,7 +441,7 @@ export function BossTimeTracker() {
                                 ↻
                               </button>
                               <button
-                                onClick={() => handleRemoveTimer(timer.id)}
+                                onClick={() => handleRemoveTimer(timer)}
                                 className="flex-1 px-2 py-1 bg-red-600/40 hover:bg-red-600/70 rounded text-xs transition-colors font-medium"
                                 title="Remover timer"
                               >

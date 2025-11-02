@@ -124,8 +124,14 @@ export function SharedBossTimeTracker() {
     }
   };
 
-  const handleRemoveTimer = async (timerId: string) => {
-    await removeTimer(timerId);
+  const handleRemoveTimer = async (timer: SharedBossTimer) => {
+    const confirmed = window.confirm(
+      `Tem certeza que deseja remover o timer de ${timer.boss_name}?`
+    );
+
+    if (confirmed) {
+      await removeTimer(timer.id);
+    }
   };
 
   const getTimerForBoss = (bossId: number): SharedBossTimer | undefined => {
@@ -426,7 +432,7 @@ export function SharedBossTimeTracker() {
                                 ↻
                               </button>
                               <button
-                                onClick={() => handleRemoveTimer(timer.id)}
+                                onClick={() => handleRemoveTimer(timer)}
                                 className="flex-1 px-2 py-1 bg-red-600/40 hover:bg-red-600/70 rounded text-xs transition-colors font-medium"
                                 title="Remover timer"
                               >
