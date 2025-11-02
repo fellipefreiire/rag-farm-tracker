@@ -57,6 +57,11 @@ export function Home() {
               <h2 className="text-3xl font-bold text-white">
                 Character Builder
               </h2>
+
+              {/* Beta Badge */}
+              <span className="inline-block mt-2 px-3 py-1 bg-purple-500/20 text-purple-300 text-xs font-bold rounded-full">
+                BETA
+              </span>
             </div>
           </div>
 
@@ -96,6 +101,11 @@ export function Home() {
               <h2 className="text-3xl font-bold text-white">
                 Fórmulas
               </h2>
+
+              {/* Beta Badge */}
+              <span className="inline-block mt-2 px-3 py-1 bg-blue-500/20 text-blue-300 text-xs font-bold rounded-full">
+                BETA
+              </span>
             </div>
           </div>
 
