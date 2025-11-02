@@ -98,9 +98,14 @@ export function Home() {
               </div>
 
               {/* Title */}
-              <h2 className="text-3xl font-bold text-white">
+              <h2 className="text-3xl font-bold text-white mb-2">
                 Boss Time Tracker
               </h2>
+
+              {/* Description */}
+              <p className="text-sm text-gray-400">
+                Salas compartilhadas para rastrear respawn de bosses em grupo
+              </p>
             </div>
           </div>
 
