@@ -115,6 +115,16 @@ export function SharedBossTimeTracker() {
     }
   };
 
+  const handleResetTimer = async (timer: SharedBossTimer) => {
+    const boss = bosses.find(b => b.id === timer.boss_id);
+    if (boss) {
+      // Remove old timer first (wait for completion)
+      await removeTimer(timer.id);
+      // Open modal to add new timer with current time
+      openBossModal(boss);
+    }
+  };
+
   const getTimerForBoss = (bossId: number): SharedBossTimer | undefined => {
     return timers.find(t => t.boss_id === bossId);
   };
@@ -402,11 +412,11 @@ export function SharedBossTimeTracker() {
                               </span>
                             )}
 
-                            {/* Complete Button */}
+                            {/* Reset Button */}
                             <button
-                              onClick={() => removeTimer(timer.id)}
+                              onClick={() => handleResetTimer(timer)}
                               className="w-full px-2 py-1 bg-green-600/40 hover:bg-green-600/70 rounded text-xs transition-colors font-medium"
-                              title="Resetar timer"
+                              title="Resetar timer - adicionar nova morte"
                             >
                               Reset
                             </button>
