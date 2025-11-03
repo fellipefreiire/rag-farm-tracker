@@ -247,11 +247,8 @@ export function useRealtimeTimers({ roomId, member }: UseRealtimeTimersProps) {
             .select();
           error = result.error;
 
-          if (!error && result.data) {
-            // Immediately update local state (fallback if realtime doesn't work)
-            console.log('addTimer: Adding to local state immediately');
-            setTimers(prev => [result.data[0] as SharedBossTimer, ...prev]);
-          }
+          // Don't update local state here - let realtime handle INSERT events
+          // (INSERT events are working, but UPDATE/DELETE are not)
         }
 
         if (error) throw error;
