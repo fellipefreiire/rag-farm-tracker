@@ -107,12 +107,26 @@ export function useRealtimeTimers({ roomId, member }: UseRealtimeTimersProps) {
     };
   }, [roomId]);
 
-  // Check for alerts
+  // Check for alerts and remove expired timers
   useEffect(() => {
     if (!supabase || !roomId) return;
 
     const checkAlerts = async () => {
       for (const timer of timers) {
+        // Check if timer has reached 00:00 (120 minutes elapsed)
+        const timeElapsed = Date.now() - timer.kill_time;
+        const maxRespawnMs = 120 * 60 * 1000;
+
+        if (timeElapsed >= maxRespawnMs) {
+          // Auto-remove expired timer
+          console.log('Auto-removing expired timer:', timer.boss_name);
+          await supabase!
+            .from('boss_timers')
+            .delete()
+            .eq('id', timer.id);
+          continue; // Skip to next timer
+        }
+
         let updated = false;
         const updates: Partial<SharedBossTimer> = {};
 
@@ -228,28 +242,21 @@ export function useRealtimeTimers({ roomId, member }: UseRealtimeTimersProps) {
           const result = await supabase
             .from('boss_timers')
             .update(newTimer)
-            .eq('id', existingTimerId)
-            .select();
+            .eq('id', existingTimerId);
           error = result.error;
 
-          if (!error && result.data) {
-            // Immediately update local state (fallback if realtime doesn't work)
-            console.log('addTimer: Updating local state immediately');
-            setTimers(prev => prev.map(t =>
-              t.id === existingTimerId ? (result.data[0] as SharedBossTimer) : t
-            ));
-          }
+          // Let realtime handle the UPDATE event - don't update local state
+          console.log('addTimer: UPDATE sent, waiting for realtime event');
         } else {
           // Insert new timer
           console.log('addTimer: Inserting new timer');
           const result = await supabase
             .from('boss_timers')
-            .insert(newTimer)
-            .select();
+            .insert(newTimer);
           error = result.error;
 
-          // Don't update local state here - let realtime handle INSERT events
-          // (INSERT events are working, but UPDATE/DELETE are not)
+          // Let realtime handle the INSERT event - don't update local state
+          console.log('addTimer: INSERT sent, waiting for realtime event');
         }
 
         if (error) throw error;
@@ -274,23 +281,17 @@ export function useRealtimeTimers({ roomId, member }: UseRealtimeTimersProps) {
 
       try {
         console.log('removeTimer: Attempting to delete timer:', timerId);
-        const { data, error } = await supabase
+        const { error } = await supabase
           .from('boss_timers')
           .delete()
-          .eq('id', timerId)
-          .select();
+          .eq('id', timerId);
 
-        console.log('removeTimer: Delete result:', { data, error });
+        console.log('removeTimer: Delete result:', { error });
 
         if (error) throw error;
 
-        // Immediately update local state (fallback if realtime doesn't work)
-        console.log('removeTimer: Updating local state immediately');
-        setTimers(prev => {
-          const filtered = prev.filter(t => t.id !== timerId);
-          console.log('removeTimer: Timers count before:', prev.length, 'after:', filtered.length);
-          return filtered;
-        });
+        // Let realtime handle the DELETE event - don't update local state
+        console.log('removeTimer: DELETE sent, waiting for realtime event');
 
         return true;
       } catch (err: any) {

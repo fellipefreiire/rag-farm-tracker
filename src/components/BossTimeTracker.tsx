@@ -73,30 +73,41 @@ export function BossTimeTracker() {
     return () => clearInterval(interval);
   }, []);
 
-  // Check for alerts every second
+  // Check for alerts and remove expired timers every second
   useEffect(() => {
     const checkAlerts = () => {
       setTimers(prevTimers => {
         let updated = false;
-        const newTimers = prevTimers.map(timer => {
-          let updatedTimer = { ...timer };
+        const newTimers = prevTimers
+          .filter(timer => {
+            // Remove timers that have reached 00:00 (120 minutes elapsed)
+            const remaining = getTimeRemaining(timer.killTime);
+            if (remaining === 0) {
+              console.log('Auto-removing expired timer:', timer.bossName);
+              updated = true;
+              return false; // Remove from list
+            }
+            return true; // Keep in list
+          })
+          .map(timer => {
+            let updatedTimer = { ...timer };
 
-          // Check for 90 minute alert
-          if (shouldAlert90(timer.killTime, timer.alert90Played)) {
-            playAlertSound();
-            updatedTimer.alert90Played = true;
-            updated = true;
-          }
+            // Check for 90 minute alert
+            if (shouldAlert90(timer.killTime, timer.alert90Played)) {
+              playAlertSound();
+              updatedTimer.alert90Played = true;
+              updated = true;
+            }
 
-          // Check for 120 minute alert
-          if (shouldAlert120(timer.killTime, timer.alert120Played)) {
-            playAlertSound();
-            updatedTimer.alert120Played = true;
-            updated = true;
-          }
+            // Check for 120 minute alert
+            if (shouldAlert120(timer.killTime, timer.alert120Played)) {
+              playAlertSound();
+              updatedTimer.alert120Played = true;
+              updated = true;
+            }
 
-          return updatedTimer;
-        });
+            return updatedTimer;
+          });
         return updated ? newTimers : prevTimers;
       });
     };
