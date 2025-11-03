@@ -223,17 +223,35 @@ export function useRealtimeTimers({ roomId, member }: UseRealtimeTimersProps) {
 
         if (existingTimer.data) {
           // Update existing timer
+          console.log('addTimer: Updating existing timer:', existingTimer.data.id);
           const result = await supabase
             .from('boss_timers')
             .update(newTimer)
-            .eq('id', existingTimer.data.id);
+            .eq('id', existingTimer.data.id)
+            .select();
           error = result.error;
+
+          if (!error && result.data) {
+            // Immediately update local state (fallback if realtime doesn't work)
+            console.log('addTimer: Updating local state immediately');
+            setTimers(prev => prev.map(t =>
+              t.id === existingTimer.data.id ? (result.data[0] as SharedBossTimer) : t
+            ));
+          }
         } else {
           // Insert new timer
+          console.log('addTimer: Inserting new timer');
           const result = await supabase
             .from('boss_timers')
-            .insert(newTimer);
+            .insert(newTimer)
+            .select();
           error = result.error;
+
+          if (!error && result.data) {
+            // Immediately update local state (fallback if realtime doesn't work)
+            console.log('addTimer: Adding to local state immediately');
+            setTimers(prev => [result.data[0] as SharedBossTimer, ...prev]);
+          }
         }
 
         if (error) throw error;
@@ -267,6 +285,14 @@ export function useRealtimeTimers({ roomId, member }: UseRealtimeTimersProps) {
         console.log('removeTimer: Delete result:', { data, error });
 
         if (error) throw error;
+
+        // Immediately update local state (fallback if realtime doesn't work)
+        console.log('removeTimer: Updating local state immediately');
+        setTimers(prev => {
+          const filtered = prev.filter(t => t.id !== timerId);
+          console.log('removeTimer: Timers count before:', prev.length, 'after:', filtered.length);
+          return filtered;
+        });
 
         return true;
       } catch (err: any) {
