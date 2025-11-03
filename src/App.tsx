@@ -7,6 +7,7 @@ import { Formulas } from './components/Formulas';
 import { FarmOptimizer } from './components/FarmOptimizer';
 import { ElementTable } from './components/ElementTable';
 import { SharedBossTimeTracker } from './components/SharedBossTimeTracker';
+import { RefineCalculator } from './components/RefineCalculator';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/optimizer" element={<FarmOptimizer />} />
         <Route path="/elements" element={<ElementTable />} />
         <Route path="/boss-tracker" element={<SharedBossTimeTracker />} />
+        <Route path="/refine-calculator" element={<RefineCalculator />} />
       </Routes>
     </OptimizerProvider>
   );

@@ -9,8 +9,8 @@ ALTER TABLE rooms REPLICA IDENTITY FULL;
 
 -- Verify the configuration
 SELECT
-  schemaname,
-  tablename,
+  nspname as schema_name,
+  relname as table_name,
   CASE relreplident
     WHEN 'd' THEN 'default'
     WHEN 'n' THEN 'nothing'
@@ -19,5 +19,5 @@ SELECT
   END as replica_identity
 FROM pg_class
 JOIN pg_namespace ON pg_namespace.oid = pg_class.relnamespace
-WHERE schemaname = 'public'
-  AND tablename IN ('boss_timers', 'room_members', 'rooms');
+WHERE nspname = 'public'
+  AND relname IN ('boss_timers', 'room_members', 'rooms');

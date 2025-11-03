@@ -28,8 +28,8 @@ ALTER TABLE rooms REPLICA IDENTITY FULL;
 
 ```sql
 SELECT
-  schemaname,
-  tablename,
+  nspname as schema_name,
+  relname as table_name,
   CASE relreplident
     WHEN 'd' THEN 'default'
     WHEN 'n' THEN 'nothing'
@@ -38,17 +38,17 @@ SELECT
   END as replica_identity
 FROM pg_class
 JOIN pg_namespace ON pg_namespace.oid = pg_class.relnamespace
-WHERE schemaname = 'public'
-  AND tablename IN ('boss_timers', 'room_members', 'rooms');
+WHERE nspname = 'public'
+  AND relname IN ('boss_timers', 'room_members', 'rooms');
 ```
 
 **Resultado esperado:**
 ```
- schemaname |  tablename   | replica_identity
-------------+--------------+------------------
- public     | boss_timers  | full
- public     | room_members | full
- public     | rooms        | full
+ schema_name |  table_name  | replica_identity
+-------------+--------------+------------------
+ public      | boss_timers  | full
+ public      | room_members | full
+ public      | rooms        | full
 ```
 
 ### Passo 2: Alterações no Código (JÁ APLICADAS)
