@@ -239,7 +239,7 @@ export function RoomManager({ onCreateRoom, onJoinRoom, onClose, isLoading, erro
                 type="text"
                 value={joinDisplayName}
                 onChange={(e) => setJoinDisplayName(e.target.value)}
-                placeholder="Ex: Maria"
+                placeholder="Ex: Fusquetinha"
                 className="w-full px-4 py-3 bg-gray-900/50 border border-gray-700 rounded-lg focus:outline-none focus:border-green-500 transition-colors text-white placeholder-gray-500"
                 maxLength={30}
               />
