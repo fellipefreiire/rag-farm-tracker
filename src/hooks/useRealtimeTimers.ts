@@ -223,11 +223,12 @@ export function useRealtimeTimers({ roomId, member }: UseRealtimeTimersProps) {
 
         if (existingTimer.data) {
           // Update existing timer
-          console.log('addTimer: Updating existing timer:', existingTimer.data.id);
+          const existingTimerId = existingTimer.data.id;
+          console.log('addTimer: Updating existing timer:', existingTimerId);
           const result = await supabase
             .from('boss_timers')
             .update(newTimer)
-            .eq('id', existingTimer.data.id)
+            .eq('id', existingTimerId)
             .select();
           error = result.error;
 
@@ -235,7 +236,7 @@ export function useRealtimeTimers({ roomId, member }: UseRealtimeTimersProps) {
             // Immediately update local state (fallback if realtime doesn't work)
             console.log('addTimer: Updating local state immediately');
             setTimers(prev => prev.map(t =>
-              t.id === existingTimer.data.id ? (result.data[0] as SharedBossTimer) : t
+              t.id === existingTimerId ? (result.data[0] as SharedBossTimer) : t
             ));
           }
         } else {
