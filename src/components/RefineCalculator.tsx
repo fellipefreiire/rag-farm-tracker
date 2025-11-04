@@ -9,7 +9,6 @@ import {
 } from '../data/refineData';
 import {
   getAllStepProbabilities,
-  calculateCumulativeProbability,
   runMonteCarloSimulation,
   simulateSingleAttempt,
 } from '../utils/refineCalculator';
@@ -77,13 +76,6 @@ export function RefineCalculator() {
     () => getAllStepProbabilities(itemType, currentRefine, targetRefine),
     [itemType, currentRefine, targetRefine]
   );
-
-  // Calculate cumulative probability (analytical)
-  const cumulativeProb = useMemo(() => {
-    if (currentRefine >= targetRefine) return null;
-    const input: RefineInput = { itemType, currentRefine, targetRefine, currentDurability };
-    return calculateCumulativeProbability(input);
-  }, [itemType, currentRefine, targetRefine, currentDurability]);
 
   // Handle interactive simulation
   const handleSimulateAttempt = () => {
@@ -334,7 +326,7 @@ export function RefineCalculator() {
                     <div className="pt-2 border-t border-gray-700">
                       <div className="text-xs text-gray-400 mb-1">Chance {formatRefineLevel(simRefine)} → {formatRefineLevel((simRefine + 1) as RefineLevel)}</div>
                       <div className="text-xl font-bold text-yellow-400">
-                        {(stepProbabilities.find(s => s.from === simRefine)?.successRate * 100 || 0).toFixed(1)}%
+                        {((stepProbabilities.find(s => s.from === simRefine)?.successRate ?? 0) * 100).toFixed(1)}%
                       </div>
                     </div>
                   )}
