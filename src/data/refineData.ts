@@ -17,6 +17,14 @@ export const REFINE_RATES: RefineRates = {
     '9-10': 0.20,  // +9 → +10 (20%)
     '10-11': 0.19, // +10 → +11 (19%)
     '11-12': 0.18, // +11 → +12 (18%)
+    '12-13': 0.17, // +12 → +13 (17%)
+    '13-14': 0.16, // +13 → +14 (16%)
+    '14-15': 0.15, // +14 → +15 (15%)
+    '15-16': 0.14, // +15 → +16 (14%)
+    '16-17': 0.13, // +16 → +17 (13%)
+    '17-18': 0.12, // +17 → +18 (12%)
+    '18-19': 0.11, // +18 → +19 (11%)
+    '19-20': 0.10, // +19 → +20 (10%)
   },
   armor: {
     '0-1': 1.00,   // +0 → +1 (100% but can fail without durability loss)
@@ -31,6 +39,14 @@ export const REFINE_RATES: RefineRates = {
     '9-10': 0.19,  // +9 → +10 (19%)
     '10-11': 0.18, // +10 → +11 (18%)
     '11-12': 0.17, // +11 → +12 (17%)
+    '12-13': 0.16, // +12 → +13 (16%)
+    '13-14': 0.15, // +13 → +14 (15%)
+    '14-15': 0.14, // +14 → +15 (14%)
+    '15-16': 0.13, // +15 → +16 (13%)
+    '16-17': 0.12, // +16 → +17 (12%)
+    '17-18': 0.11, // +17 → +18 (11%)
+    '18-19': 0.10, // +18 → +19 (10%)
+    '19-20': 0.09, // +19 → +20 (9%)
   },
 };
 
@@ -55,7 +71,7 @@ export function getSuccessRate(
 
 // Get all refine level options
 export function getRefineOptions(): RefineLevel[] {
-  return [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+  return [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
 }
 
 // Get valid target refine options based on current refine
@@ -74,5 +90,6 @@ export function getRefineColor(level: RefineLevel): string {
   if (level <= 7) return 'text-blue-400';
   if (level <= 9) return 'text-purple-400';
   if (level <= 10) return 'text-yellow-400';
-  return 'text-orange-400';
+  if (level <= 15) return 'text-orange-400';
+  return 'text-red-500';
 }
