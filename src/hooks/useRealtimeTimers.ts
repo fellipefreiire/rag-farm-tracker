@@ -113,9 +113,9 @@ export function useRealtimeTimers({ roomId, member }: UseRealtimeTimersProps) {
 
     const checkAlerts = async () => {
       for (const timer of timers) {
-        // Check if timer has reached 00:00 (120 minutes elapsed)
+        // Check if timer has reached 00:00 (180 minutes elapsed)
         const timeElapsed = Date.now() - timer.kill_time;
-        const maxRespawnMs = 120 * 60 * 1000;
+        const maxRespawnMs = 180 * 60 * 1000;
 
         if (timeElapsed >= maxRespawnMs) {
           // Auto-remove expired timer
@@ -130,14 +130,14 @@ export function useRealtimeTimers({ roomId, member }: UseRealtimeTimersProps) {
         let updated = false;
         const updates: Partial<SharedBossTimer> = {};
 
-        // Check 90 minute alert
+        // Check 180 minute alert
         if (shouldAlert90(timer.kill_time, timer.alert_90_played)) {
           playAlertSound();
           updates.alert_90_played = true;
           updated = true;
         }
 
-        // Check 120 minute alert
+        // Check 180 minute alert
         if (shouldAlert120(timer.kill_time, timer.alert_120_played)) {
           playAlertSound();
           updates.alert_120_played = true;
@@ -216,7 +216,7 @@ export function useRealtimeTimers({ roomId, member }: UseRealtimeTimersProps) {
           kill_time_utc: formatTimeWithZone(new Date(killTime), true),
           kill_time_local: formatTimeWithZone(new Date(killTime), false),
           respawn_minutes: boss.respawnTime,
-          next_spawn_time: killTime + 120 * 60 * 1000, // Always 120 minutes
+          next_spawn_time: killTime + 180 * 60 * 1000, // Always 180 minutes
           player_name: playerName?.trim() || null,
           added_by_member_id: member.id,
           added_by_display_name: member.display_name,

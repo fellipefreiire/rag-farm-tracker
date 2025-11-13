@@ -13,8 +13,8 @@ export function msToHours(ms: number): number {
 
 // Boss Time Tracker utilities
 export function getTimeRemaining(killTime: number): number {
-  // Always count to 120 minutes (maximum respawn time)
-  const maxRespawnMs = 120 * 60 * 1000;
+  // Always count to 180 minutes (maximum respawn time)
+  const maxRespawnMs = 180 * 60 * 1000;
   const nextSpawn = killTime + maxRespawnMs;
   const now = Date.now();
   return Math.max(0, nextSpawn - now);
@@ -30,21 +30,21 @@ export function formatCountdown(ms: number): string {
 }
 
 export function hasRespawned(killTime: number): boolean {
-  // Boss has respawned after 120 minutes
-  const maxRespawnMs = 120 * 60 * 1000;
+  // Boss has respawned after 180 minutes
+  const maxRespawnMs = 180 * 60 * 1000;
   return Date.now() >= (killTime + maxRespawnMs);
 }
 
 export function shouldAlert90(killTime: number, alert90Played: boolean): boolean {
-  // Alert at 90 minutes
-  const alert90Ms = 90 * 60 * 1000;
+  // Alert at 180 minutes
+  const alert90Ms = 180 * 60 * 1000;
   const timeSinceKill = Date.now() - killTime;
   return !alert90Played && timeSinceKill >= alert90Ms;
 }
 
 export function shouldAlert120(killTime: number, alert120Played: boolean): boolean {
-  // Alert at 120 minutes
-  const alert120Ms = 120 * 60 * 1000;
+  // Alert at 180 minutes
+  const alert120Ms = 180 * 60 * 1000;
   const timeSinceKill = Date.now() - killTime;
   return !alert120Played && timeSinceKill >= alert120Ms;
 }

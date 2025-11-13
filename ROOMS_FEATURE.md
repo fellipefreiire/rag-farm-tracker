@@ -95,7 +95,7 @@ Resumo rápido:
 - Adicione timers normalmente
 - Todos veem os mesmos timers em tempo real
 - Timers mostram quem adicionou (nome + cor)
-- Alertas tocam para todos quando atingem 90/120min
+- Alertas tocam para todos quando atingem 180min
 - Copie o link a qualquer momento
 - Saia da sala quando quiser
 ```

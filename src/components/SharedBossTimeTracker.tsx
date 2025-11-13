@@ -546,7 +546,7 @@ export function SharedBossTimeTracker() {
 
               <div className="text-sm text-gray-400 bg-gray-900/30 rounded-lg p-3">
                 <p>📍 {selectedBoss.mapLocation || 'Localização desconhecida'}</p>
-                <p>⏱️ Respawn: 90-120 minutos</p>
+                <p>⏱️ Respawn: 180 minutos</p>
               </div>
             </div>
 

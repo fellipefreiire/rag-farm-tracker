@@ -80,7 +80,7 @@ export function BossTimeTracker() {
         let updated = false;
         const newTimers = prevTimers
           .filter(timer => {
-            // Remove timers that have reached 00:00 (120 minutes elapsed)
+            // Remove timers that have reached 00:00 (180 minutes elapsed)
             const remaining = getTimeRemaining(timer.killTime);
             if (remaining === 0) {
               console.log('Auto-removing expired timer:', timer.bossName);
@@ -92,14 +92,14 @@ export function BossTimeTracker() {
           .map(timer => {
             let updatedTimer = { ...timer };
 
-            // Check for 90 minute alert
+            // Check for 180 minute alert
             if (shouldAlert90(timer.killTime, timer.alert90Played)) {
               playAlertSound();
               updatedTimer.alert90Played = true;
               updated = true;
             }
 
-            // Check for 120 minute alert
+            // Check for 180 minute alert
             if (shouldAlert120(timer.killTime, timer.alert120Played)) {
               playAlertSound();
               updatedTimer.alert120Played = true;
@@ -184,7 +184,7 @@ export function BossTimeTracker() {
         killTimeUTC: formatTimeWithZone(new Date(killTime), true),
         killTimeLocal: formatTimeWithZone(new Date(killTime), false),
         respawnMinutes: selectedBoss.respawnTime,
-        nextSpawnTime: killTime + 120 * 60 * 1000, // Always 120 minutes max
+        nextSpawnTime: killTime + 180 * 60 * 1000, // Always 180 minutes max
         playerName: playerName.trim() || undefined,
         alert90Played: false,
         alert120Played: false,
@@ -239,7 +239,7 @@ export function BossTimeTracker() {
 
   const getTimerStatus = (timer: BossTimerEntry): TimerStatus => {
     const timeElapsed = Date.now() - timer.killTime;
-    const alert90Time = 90 * 60 * 1000;
+    const alert90Time = 180 * 60 * 1000;
 
     if (hasRespawned(timer.killTime)) {
       return 'respawned';
@@ -379,7 +379,7 @@ export function BossTimeTracker() {
                       {/* Boss Details */}
                       <div className="space-y-0.5 mb-2 text-[10px] text-gray-400">
                         <p className="truncate">📍 {boss.mapLocation || 'Desc.'}</p>
-                        <p>⏱️ 90-120m</p>
+                        <p>⏱️ 180m</p>
                       </div>
 
                       {/* Action Button */}

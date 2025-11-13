@@ -1,8 +1,8 @@
 import type { Boss } from '../types/index';
 
 // Boss data with correct names and map locations
-// Mini-bosses: 90-120 minutes respawn
-// MVPs: 90-120 minutes respawn
+// Mini-bosses: 180 minutes respawn
+// MVPs: 180 minutes respawn
 
 const miniBosses: Array<{ name: string; mapLocation: string }> = [
   { name: 'Zealotus', mapLocation: 'gl_prison1' },
@@ -74,7 +74,7 @@ export function getBossList(): Boss[] {
       mapLocation: boss.mapLocation,
       isMVP: false,
       isMini: true,
-      respawnTime: 120, // 90-120 minutes
+      respawnTime: 180, // 180 minutes
     });
   });
 
@@ -97,7 +97,7 @@ export function getBossList(): Boss[] {
       mapLocation: boss.mapLocation,
       isMVP: true,
       isMini: false,
-      respawnTime: 120, // 90-120 minutes
+      respawnTime: 180, // 180 minutes
     });
   });
 
