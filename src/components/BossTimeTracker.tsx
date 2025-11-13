@@ -6,8 +6,7 @@ import {
   getTimeRemaining,
   formatCountdown,
   hasRespawned,
-  shouldAlert90,
-  shouldAlert120,
+  shouldAlert180,
 } from '../utils/time';
 import { playAlertSound } from '../utils/audio';
 import { isSupabaseConfigured } from '../lib/supabase';
@@ -92,17 +91,10 @@ export function BossTimeTracker() {
           .map(timer => {
             let updatedTimer = { ...timer };
 
-            // Check for 180 minute alert
-            if (shouldAlert90(timer.killTime, timer.alert90Played)) {
+            // Check for 180 minute alert (when timer reaches 00:00)
+            if (shouldAlert180(timer.killTime, timer.alert180Played)) {
               playAlertSound();
-              updatedTimer.alert90Played = true;
-              updated = true;
-            }
-
-            // Check for 180 minute alert
-            if (shouldAlert120(timer.killTime, timer.alert120Played)) {
-              playAlertSound();
-              updatedTimer.alert120Played = true;
+              updatedTimer.alert180Played = true;
               updated = true;
             }
 
@@ -186,8 +178,7 @@ export function BossTimeTracker() {
         respawnMinutes: selectedBoss.respawnTime,
         nextSpawnTime: killTime + 180 * 60 * 1000, // Always 180 minutes max
         playerName: playerName.trim() || undefined,
-        alert90Played: false,
-        alert120Played: false,
+        alert180Played: false,
         createdAt: Date.now(),
       };
 

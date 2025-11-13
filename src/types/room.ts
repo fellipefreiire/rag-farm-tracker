@@ -32,8 +32,7 @@ export interface SharedBossTimer {
   added_by_member_id: string;
   added_by_display_name: string;
   added_by_color: string;
-  alert_90_played: boolean;
-  alert_120_played: boolean;
+  alert_180_played: boolean;
   created_at: string;
 }
 

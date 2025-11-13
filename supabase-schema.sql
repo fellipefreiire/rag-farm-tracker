@@ -36,8 +36,7 @@ CREATE TABLE IF NOT EXISTS boss_timers (
   added_by_member_id UUID REFERENCES room_members(id) ON DELETE CASCADE NOT NULL,
   added_by_display_name TEXT NOT NULL,
   added_by_color TEXT NOT NULL,
-  alert_90_played BOOLEAN DEFAULT false,
-  alert_120_played BOOLEAN DEFAULT false,
+  alert_180_played BOOLEAN DEFAULT false,
   created_at TIMESTAMP WITH TIME ZONE DEFAULT now(),
   -- Ensure only one timer per boss per room
   UNIQUE(room_id, boss_id)

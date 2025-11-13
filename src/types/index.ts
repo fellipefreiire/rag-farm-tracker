@@ -97,9 +97,8 @@ export interface BossTimerEntry {
   killTimeUTC: string; // formatted UTC time (HH:MM)
   killTimeLocal: string; // formatted local time (HH:MM)
   respawnMinutes: number; // respawn time in minutes (default 180)
-  nextSpawnTime: number; // calculated timestamp for 120 minutes
+  nextSpawnTime: number; // calculated timestamp for 180 minutes
   playerName?: string;
-  alert90Played: boolean; // tracks if 90min alert has been played
-  alert120Played: boolean; // tracks if 120min alert has been played
+  alert180Played: boolean; // tracks if 180min (respawn) alert has been played
   createdAt: number; // timestamp when entry was created
 }

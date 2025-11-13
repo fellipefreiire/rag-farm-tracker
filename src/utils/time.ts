@@ -35,18 +35,11 @@ export function hasRespawned(killTime: number): boolean {
   return Date.now() >= (killTime + maxRespawnMs);
 }
 
-export function shouldAlert90(killTime: number, alert90Played: boolean): boolean {
-  // Alert at 180 minutes
-  const alert90Ms = 180 * 60 * 1000;
+export function shouldAlert180(killTime: number, alert180Played: boolean): boolean {
+  // Alert at 180 minutes (when boss respawns - timer reaches 00:00)
+  const alert180Ms = 180 * 60 * 1000;
   const timeSinceKill = Date.now() - killTime;
-  return !alert90Played && timeSinceKill >= alert90Ms;
-}
-
-export function shouldAlert120(killTime: number, alert120Played: boolean): boolean {
-  // Alert at 180 minutes
-  const alert120Ms = 180 * 60 * 1000;
-  const timeSinceKill = Date.now() - killTime;
-  return !alert120Played && timeSinceKill >= alert120Ms;
+  return !alert180Played && timeSinceKill >= alert180Ms;
 }
 
 export function getTimeSinceKill(killTime: number): number {

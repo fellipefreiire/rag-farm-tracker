@@ -3,7 +3,7 @@ import { supabase } from '../lib/supabase';
 import type { SharedBossTimer, RoomMember } from '../types/room';
 import type { Boss } from '../types/index';
 import { playAlertSound } from '../utils/audio';
-import { shouldAlert90, shouldAlert120 } from '../utils/time';
+import { shouldAlert180 } from '../utils/time';
 
 interface UseRealtimeTimersProps {
   roomId: string | null;
@@ -130,17 +130,10 @@ export function useRealtimeTimers({ roomId, member }: UseRealtimeTimersProps) {
         let updated = false;
         const updates: Partial<SharedBossTimer> = {};
 
-        // Check 180 minute alert
-        if (shouldAlert90(timer.kill_time, timer.alert_90_played)) {
+        // Check 180 minute alert (when timer reaches 00:00)
+        if (shouldAlert180(timer.kill_time, timer.alert_180_played)) {
           playAlertSound();
-          updates.alert_90_played = true;
-          updated = true;
-        }
-
-        // Check 180 minute alert
-        if (shouldAlert120(timer.kill_time, timer.alert_120_played)) {
-          playAlertSound();
-          updates.alert_120_played = true;
+          updates.alert_180_played = true;
           updated = true;
         }
 
@@ -221,8 +214,7 @@ export function useRealtimeTimers({ roomId, member }: UseRealtimeTimersProps) {
           added_by_member_id: member.id,
           added_by_display_name: member.display_name,
           added_by_color: member.user_color,
-          alert_90_played: false,
-          alert_120_played: false,
+          alert_180_played: false,
         };
 
         // Check if timer already exists for this boss
